@@ -17,12 +17,12 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
 
-      const colors: any = config.variables;
-      const echarts: any = config.variables.echarts;
+      // const colors: any = config.variables;
+      // const echarts: any = config.variables.echarts;
 
       this.options = {
         title: {
-          text: 'Simple Graph'
+          text: 'Simple Graph',
         },
         tooltip: {},
         animationDurationUpdate: 1500,
@@ -35,34 +35,34 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
             roam: true,
             label: {
               normal: {
-                show: true
-              }
+                show: true,
+              },
             },
             edgeSymbol: ['circle', 'arrow'],
             edgeSymbolSize: [4, 10],
             edgeLabel: {
               normal: {
                 textStyle: {
-                  fontSize: 20
-                }
-              }
+                  fontSize: 20,
+                },
+              },
             },
             data: [{
               name: 'Node 1',
               x: 300,
-              y: 300
+              y: 300,
             }, {
               name: 'Node 2',
               x: 800,
-              y: 300
+              y: 300,
             }, {
               name: 'Node 3',
               x: 550,
-              y: 100
+              y: 100,
             }, {
               name: 'Node 4',
               x: 550,
-              y: 500
+              y: 500,
             }],
             // links: [],
             links: [{
@@ -71,44 +71,44 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
               symbolSize: [5, 20],
               label: {
                 normal: {
-                  show: true
-                }
+                  show: true,
+                },
               },
               lineStyle: {
                 normal: {
                   width: 5,
-                  curveness: 0.2
-                }
-              }
+                  curveness: 0.2,
+                },
+              },
             }, {
               source: 'Node 2',
               target: 'Node 1',
               label: {
                 normal: {
-                  show: true
-                }
+                  show: true,
+                },
               },
               lineStyle: {
-                normal: { curveness: 0.2 }
-              }
+                normal: { curveness: 0.2 },
+              },
             }, {
               source: 'Node 1',
-              target: 'Node 3'
+              target: 'Node 3',
             }, {
               source: 'Node 2',
-              target: 'Node 3'
+              target: 'Node 3',
             }, {
               source: 'Node 2',
-              target: 'Node 4'
+              target: 'Node 4',
             }, {
               source: 'Node 1',
-              target: 'Node 4'
+              target: 'Node 4',
             }],
             lineStyle: {
               normal: {
                 opacity: 0.9,
                 width: 2,
-                curveness: 0
+                curveness: 0,
               },
             },
           },

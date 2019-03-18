@@ -138,7 +138,9 @@
               "src/tsconfig.spec.json"
             ],
             "typeCheck": true,
-            "exclude": []
+            "exclude": [
+	      "src/**/*.json"
+	    ]
           }
         }
       }
