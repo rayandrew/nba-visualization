@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { of as observableOf, Observable } from 'rxjs';
 import { Player, PlayerChart, PlayerData } from '../data/player';
 
-import Players from '../players.json';
+import * as Players from '../players.json';
 
 @Injectable()
 export class PlayerService extends PlayerData {
