@@ -1,0 +1,182 @@
+[
+  {
+    "team": "ATL",
+    "win": 24,
+    "lose": 58,
+    "salary": 80997929
+  },
+  {
+    "team": "BRK",
+    "win": 28,
+    "lose": 54,
+    "salary": 90489772
+  },
+  {
+    "team": "BOS",
+    "win": 55,
+    "lose": 27,
+    "salary": 114917104
+  },
+  {
+    "team": "CHO",
+    "win": 36,
+    "lose": 46,
+    "salary": 117228164
+  },
+  {
+    "team": "CHI",
+    "win": 27,
+    "lose": 55,
+    "salary": 56318128
+  },
+  {
+    "team": "CLE",
+    "win": 50,
+    "lose": 32,
+    "salary": 137242469
+  },
+  {
+    "team": "DAL",
+    "win": 24,
+    "lose": 58,
+    "salary": 82427191
+  },
+  {
+    "team": "DEN",
+    "win": 46,
+    "lose": 36,
+    "salary": 103153049
+  },
+  {
+    "team": "DET",
+    "win": 39,
+    "lose": 43,
+    "salary": 113709046
+  },
+  {
+    "team": "GSW",
+    "win": 58,
+    "lose": 24,
+    "salary": 136549719
+  },
+  {
+    "team": "HOU",
+    "win": 65,
+    "lose": 17,
+    "salary": 117336470
+  },
+  {
+    "team": "IND",
+    "win": 48,
+    "lose": 34,
+    "salary": 91911839
+  },
+  {
+    "team": "LAC",
+    "win": 42,
+    "lose": 40,
+    "salary": 116350162
+  },
+  {
+    "team": "LAL",
+    "win": 35,
+    "lose": 47,
+    "salary": 103942839
+  },
+  {
+    "team": "MEM",
+    "win": 22,
+    "lose": 60,
+    "salary": 107279661
+  },
+  {
+    "team": "MIA",
+    "win": 44,
+    "lose": 38,
+    "salary": 104620623
+  },
+  {
+    "team": "MIL",
+    "win": 44,
+    "lose": 38,
+    "salary": 112749596
+  },
+  {
+    "team": "MIN",
+    "win": 47,
+    "lose": 35,
+    "salary": 104508249
+  },
+  {
+    "team": "NOP",
+    "win": 48,
+    "lose": 34,
+    "salary": 111916958
+  },
+  {
+    "team": "NYK",
+    "win": 29,
+    "lose": 53,
+    "salary": 104868489
+  },
+  {
+    "team": "OKC",
+    "win": 48,
+    "lose": 34,
+    "salary": 131851601
+  },
+  {
+    "team": "ORL",
+    "win": 25,
+    "lose": 57,
+    "salary": 96592620
+  },
+  {
+    "team": "PHI",
+    "win": 52,
+    "lose": 30,
+    "salary": 99294278
+  },
+  {
+    "team": "PHO",
+    "win": 21,
+    "lose": 61,
+    "salary": 80699583
+  },
+  {
+    "team": "POR",
+    "win": 49,
+    "lose": 33,
+    "salary": 113824055
+  },
+  {
+    "team": "SAS",
+    "win": 47,
+    "lose": 35,
+    "salary": 113237104
+  },
+  {
+    "team": "SAC",
+    "win": 27,
+    "lose": 55,
+    "salary": 67775287
+  },
+  {
+    "team": "TOR",
+    "win": 59,
+    "lose": 23,
+    "salary": 115428796
+  },
+  {
+    "team": "UTA",
+    "win": 48,
+    "lose": 34,
+    "salary": 103935448
+  },
+  {
+    "team": "WAS",
+    "win": 43,
+    "lose": 39,
+    "salary": 123108940
+  }
+]

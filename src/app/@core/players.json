@@ -1,0 +1,2882 @@
+[
+  {
+    "per": 9.3,
+    "player": "Tyler Dorsey",
+    "salary": 815615,
+    "team": "ATL"
+  },
+  {
+    "per": 13,
+    "player": "Tyler Cavanaugh",
+    "salary": 679919,
+    "team": "ATL"
+  },
+  {
+    "per": 12.3,
+    "player": "Taurean Waller-Prince",
+    "salary": 2422560,
+    "team": "ATL"
+  },
+  {
+    "per": -4.6,
+    "player": "Nicolas Brussino",
+    "salary": 1312611,
+    "team": "ATL"
+  },
+  {
+    "per": 10.7,
+    "player": "Miles Plumlee",
+    "salary": 12500000,
+    "team": "ATL"
+  },
+  {
+    "per": 14.6,
+    "player": "Mike Muscala",
+    "salary": 5000000,
+    "team": "ATL"
+  },
+  {
+    "per": 14.1,
+    "player": "Marco Belinelli",
+    "salary": 6306060,
+    "team": "ATL"
+  },
+  {
+    "per": 10.7,
+    "player": "Malcolm Delaney",
+    "salary": 2500000,
+    "team": "ATL"
+  },
+  {
+    "per": 14.5,
+    "player": "Kent Bazemore",
+    "salary": 16910113,
+    "team": "ATL"
+  },
+  {
+    "per": 18.4,
+    "player": "John Collins",
+    "salary": 1936920,
+    "team": "ATL"
+  },
+  {
+    "per": 10.4,
+    "player": "Jeremy Evans",
+    "salary": 50000,
+    "team": "ATL"
+  },
+  {
+    "per": 6.9,
+    "player": "Jaylen Morris",
+    "salary": 92160,
+    "team": "ATL"
+  },
+  {
+    "per": 11.2,
+    "player": "Isaiah Taylor",
+    "salary": 1312611,
+    "team": "ATL"
+  },
+  {
+    "per": 15.1,
+    "player": "Ersan Ilyasova",
+    "salary": 6000000,
+    "team": "ATL"
+  },
+  {
+    "per": 15.7,
+    "player": "Dewayne Dedmon",
+    "salary": 6000000,
+    "team": "ATL"
+  },
+  {
+    "per": 17.3,
+    "player": "Dennis Schroder",
+    "salary": 15500000,
+    "team": "ATL"
+  },
+  {
+    "per": 6.2,
+    "player": "DeAndre' Bembry",
+    "salary": 1567200,
+    "team": "ATL"
+  },
+  {
+    "per": 7.3,
+    "player": "Antonius Cleveland",
+    "salary": 92160,
+    "team": "ATL"
+  },
+  {
+    "per": 15.4,
+    "player": "Terry Rozier",
+    "salary": 1988520,
+    "team": "BOS"
+  },
+  {
+    "per": 10.2,
+    "player": "Shane Larkin",
+    "salary": 1524305,
+    "team": "BOS"
+  },
+  {
+    "per": 4,
+    "player": "Semi Ojeleye",
+    "salary": 1291892,
+    "team": "BOS"
+  },
+  {
+    "per": 10.8,
+    "player": "Marcus Smart",
+    "salary": 4538020,
+    "team": "BOS"
+  },
+  {
+    "per": 14.8,
+    "player": "Marcus Morris",
+    "salary": 5000000,
+    "team": "BOS"
+  },
+  {
+    "per": 25.1,
+    "player": "Kyrie Irving",
+    "salary": 18868625,
+    "team": "BOS"
+  },
+  {
+    "per": 15.1,
+    "player": "Jayson Tatum",
+    "salary": 5645400,
+    "team": "BOS"
+  },
+  {
+    "per": 13.3,
+    "player": "Jaylen Brown",
+    "salary": 4956480,
+    "team": "BOS"
+  },
+  {
+    "per": 4,
+    "player": "Jarell Eddie",
+    "salary": 83129,
+    "team": "BOS"
+  },
+  {
+    "per": 10.5,
+    "player": "Guerschon Yabusele",
+    "salary": 2247480,
+    "team": "BOS"
+  },
+  {
+    "per": 21,
+    "player": "Greg Monroe",
+    "salary": 5000000,
+    "team": "BOS"
+  },
+  {
+    "per": 7.4,
+    "player": "Gordon Hayward",
+    "salary": 29727900,
+    "team": "BOS"
+  },
+  {
+    "per": 16.2,
+    "player": "Daniel Theis",
+    "salary": 815615,
+    "team": "BOS"
+  },
+  {
+    "per": 11.7,
+    "player": "Aron Baynes",
+    "salary": 4328000,
+    "team": "BOS"
+  },
+  {
+    "per": 17.5,
+    "player": "Al Horford",
+    "salary": 27734405,
+    "team": "BOS"
+  },
+  {
+    "per": 5.7,
+    "player": "Abdel Nader",
+    "salary": 1167333,
+    "team": "BOS"
+  },
+  {
+    "per": 10.2,
+    "player": "Timofey Mozgov",
+    "salary": 15280000,
+    "team": "BRK"
+  },
+  {
+    "per": 16,
+    "player": "Spencer Dinwiddie",
+    "salary": 1524305,
+    "team": "BRK"
+  },
+  {
+    "per": 5,
+    "player": "Sean Kilpatrick",
+    "salary": 1524305,
+    "team": "BRK"
+  },
+  {
+    "per": 17.3,
+    "player": "Rondae Hollis-Jefferson",
+    "salary": 1471382,
+    "team": "BRK"
+  },
+  {
+    "per": 7.5,
+    "player": "Quincy Acy",
+    "salary": 1709538,
+    "team": "BRK"
+  },
+  {
+    "per": 10,
+    "player": "Nik Stauskas",
+    "salary": 3807146,
+    "team": "BRK"
+  },
+  {
+    "per": 13,
+    "player": "Joe Harris",
+    "salary": 1524305,
+    "team": "BRK"
+  },
+  {
+    "per": 16,
+    "player": "Jeremy Lin",
+    "salary": 12000000,
+    "team": "BRK"
+  },
+  {
+    "per": 17.6,
+    "player": "Jarrett Allen",
+    "salary": 1713720,
+    "team": "BRK"
+  },
+  {
+    "per": 15.9,
+    "player": "Jahlil Okafor",
+    "salary": 4995120,
+    "team": "BRK"
+  },
+  {
+    "per": 11.6,
+    "player": "Isaiah Whitehead",
+    "salary": 1312611,
+    "team": "BRK"
+  },
+  {
+    "per": 14.3,
+    "player": "DeMarre Carroll",
+    "salary": 14800000,
+    "team": "BRK"
+  },
+  {
+    "per": 13.2,
+    "player": "Dante Cunningham",
+    "salary": 2300000,
+    "team": "BRK"
+  },
+  {
+    "per": 15.5,
+    "player": "D'Angelo Russell",
+    "salary": 5562360,
+    "team": "BRK"
+  },
+  {
+    "per": 14.2,
+    "player": "Caris LeVert",
+    "salary": 1632480,
+    "team": "BRK"
+  },
+  {
+    "per": 11.1,
+    "player": "Allen Crabbe",
+    "salary": 19332500,
+    "team": "BRK"
+  },
+  {
+    "per": 14.6,
+    "player": "Zach LaVine",
+    "salary": 3202217,
+    "team": "CHI"
+  },
+  {
+    "per": 14.7,
+    "player": "Robin Lopez",
+    "salary": 13788500,
+    "team": "CHI"
+  },
+  {
+    "per": 4,
+    "player": "Quincy Pondexter",
+    "salary": 3853931,
+    "team": "CHI"
+  },
+  {
+    "per": 5.2,
+    "player": "Paul Zipser",
+    "salary": 1312611,
+    "team": "CHI"
+  },
+  {
+    "per": 13.9,
+    "player": "Noah Vonleh",
+    "salary": 3505233,
+    "team": "CHI"
+  },
+  {
+    "per": 15.3,
+    "player": "Lauri Markkanen",
+    "salary": 3821640,
+    "team": "CHI"
+  },
+  {
+    "per": 14.5,
+    "player": "Kris Dunn",
+    "salary": 4046760,
+    "team": "CHI"
+  },
+  {
+    "per": 3.6,
+    "player": "Kay Felder",
+    "salary": 1312611,
+    "team": "CHI"
+  },
+  {
+    "per": 10.9,
+    "player": "Justin Holiday",
+    "salary": 4615385,
+    "team": "CHI"
+  },
+  {
+    "per": 14.5,
+    "player": "Jerian Grant",
+    "salary": 1713840,
+    "team": "CHI"
+  },
+  {
+    "per": -13.6,
+    "player": "Jarell Eddie",
+    "salary": 83129,
+    "team": "CHI"
+  },
+  {
+    "per": 12.1,
+    "player": "Denzel Valentine",
+    "salary": 2186400,
+    "team": "CHI"
+  },
+  {
+    "per": 12.8,
+    "player": "David Nwaba",
+    "salary": 1312611,
+    "team": "CHI"
+  },
+  {
+    "per": 12.3,
+    "player": "Cristiano Felicio",
+    "salary": 7843500,
+    "team": "CHI"
+  },
+  {
+    "per": 14,
+    "player": "Cameron Payne",
+    "salary": 2203440,
+    "team": "CHI"
+  },
+  {
+    "per": 20,
+    "player": "Bobby Portis",
+    "salary": 1516320,
+    "team": "CHI"
+  },
+  {
+    "per": 25,
+    "player": "Willy Hernangomez",
+    "salary": 1435750,
+    "team": "CHO"
+  },
+  {
+    "per": 9,
+    "player": "Treveon Graham",
+    "salary": 1312611,
+    "team": "CHO"
+  },
+  {
+    "per": 14.3,
+    "player": "Nicolas Batum",
+    "salary": 22434783,
+    "team": "CHO"
+  },
+  {
+    "per": 12.6,
+    "player": "Michael Kidd-Gilchrist",
+    "salary": 13000000,
+    "team": "CHO"
+  },
+  {
+    "per": 10.9,
+    "player": "Michael Carter-Williams",
+    "salary": 2700000,
+    "team": "CHO"
+  },
+  {
+    "per": 13.3,
+    "player": "Marvin Williams",
+    "salary": 13168750,
+    "team": "CHO"
+  },
+  {
+    "per": 8.5,
+    "player": "Malik Monk",
+    "salary": 2904480,
+    "team": "CHO"
+  },
+  {
+    "per": 20.7,
+    "player": "Kemba Walker",
+    "salary": 12000000,
+    "team": "CHO"
+  },
+  {
+    "per": 6.7,
+    "player": "Julyan Stone",
+    "salary": 1524305,
+    "team": "CHO"
+  },
+  {
+    "per": 17,
+    "player": "Jeremy Lamb",
+    "salary": 7000000,
+    "team": "CHO"
+  },
+  {
+    "per": 14,
+    "player": "Frank Kaminsky",
+    "salary": 2847600,
+    "team": "CHO"
+  },
+  {
+    "per": 20.5,
+    "player": "Dwight Howard",
+    "salary": 23500000,
+    "team": "CHO"
+  },
+  {
+    "per": 5.8,
+    "player": "Dwayne Bacon",
+    "salary": 815615,
+    "team": "CHO"
+  },
+  {
+    "per": 16,
+    "player": "Cody Zeller",
+    "salary": 12584270,
+    "team": "CHO"
+  },
+  {
+    "per": 13.7,
+    "player": "Tristan Thompson",
+    "salary": 16400000,
+    "team": "CLE"
+  },
+  {
+    "per": 12.6,
+    "player": "Rodney Hood",
+    "salary": 2386864,
+    "team": "CLE"
+  },
+  {
+    "per": 28.5,
+    "player": "LeBron James",
+    "salary": 33285709,
+    "team": "CLE"
+  },
+  {
+    "per": 22,
+    "player": "Larry Nance",
+    "salary": 1471382,
+    "team": "CLE"
+  },
+  {
+    "per": 13.5,
+    "player": "Kyle Korver",
+    "salary": 7000000,
+    "team": "CLE"
+  },
+  {
+    "per": 22.4,
+    "player": "Kevin Love",
+    "salary": 22642350,
+    "team": "CLE"
+  },
+  {
+    "per": 11.5,
+    "player": "Jose Calderon",
+    "salary": 2328652,
+    "team": "CLE"
+  },
+  {
+    "per": 16,
+    "player": "Jordan Clarkson",
+    "salary": 11562500,
+    "team": "CLE"
+  },
+  {
+    "per": 14.2,
+    "player": "Jeff Green",
+    "salary": 2116955,
+    "team": "CLE"
+  },
+  {
+    "per": 8.5,
+    "player": "J.R. Smith",
+    "salary": 13760000,
+    "team": "CLE"
+  },
+  {
+    "per": 12,
+    "player": "George Hill",
+    "salary": 20000000,
+    "team": "CLE"
+  },
+  {
+    "per": 10.9,
+    "player": "Cedi Osman",
+    "salary": 2642857,
+    "team": "CLE"
+  },
+  {
+    "per": 23.2,
+    "player": "Ante Zizic",
+    "salary": 1645200,
+    "team": "CLE"
+  },
+  {
+    "per": 11.5,
+    "player": "Yogi Ferrell",
+    "salary": 1312611,
+    "team": "DAL"
+  },
+  {
+    "per": 11.4,
+    "player": "Wesley Matthews",
+    "salary": 17884176,
+    "team": "DAL"
+  },
+  {
+    "per": -4.6,
+    "player": "Scotty Hopson",
+    "salary": 74159,
+    "team": "DAL"
+  },
+  {
+    "per": 17.8,
+    "player": "Salah Mejri",
+    "salary": 1471382,
+    "team": "DAL"
+  },
+  {
+    "per": 16.2,
+    "player": "Nerlens Noel",
+    "salary": 4187599,
+    "team": "DAL"
+  },
+  {
+    "per": 12.9,
+    "player": "Maxi Kleber",
+    "salary": 815615,
+    "team": "DAL"
+  },
+  {
+    "per": 9.8,
+    "player": "Kyle Collinsworth",
+    "salary": 92160,
+    "team": "DAL"
+  },
+  {
+    "per": -12.5,
+    "player": "Josh McRoberts",
+    "salary": 6021175,
+    "team": "DAL"
+  },
+  {
+    "per": 8.3,
+    "player": "Jeff Withey",
+    "salary": 1577320,
+    "team": "DAL"
+  },
+  {
+    "per": 22.6,
+    "player": "Jameel Warney",
+    "salary": 46080,
+    "team": "DAL"
+  },
+  {
+    "per": 17.8,
+    "player": "J.J. Barea",
+    "salary": 3903900,
+    "team": "DAL"
+  },
+  {
+    "per": 16,
+    "player": "Harrison Barnes",
+    "salary": 23112004,
+    "team": "DAL"
+  },
+  {
+    "per": 7.4,
+    "player": "Gian Clavell",
+    "salary": 50000,
+    "team": "DAL"
+  },
+  {
+    "per": 18.7,
+    "player": "Dwight Powell",
+    "salary": 9003125,
+    "team": "DAL"
+  },
+  {
+    "per": 11.7,
+    "player": "Doug McDermott",
+    "salary": 3294994,
+    "team": "DAL"
+  },
+  {
+    "per": 6.3,
+    "player": "Dorian Finney-Smith",
+    "salary": 1312611,
+    "team": "DAL"
+  },
+  {
+    "per": 16.7,
+    "player": "Dirk Nowitzki",
+    "salary": 5000000,
+    "team": "DAL"
+  },
+  {
+    "per": 12.8,
+    "player": "Dennis Smith",
+    "salary": 3218280,
+    "team": "DAL"
+  },
+  {
+    "per": 5.1,
+    "player": "Antonius Cleveland",
+    "salary": 50000,
+    "team": "DAL"
+  },
+  {
+    "per": 11.1,
+    "player": "Wilson Chandler",
+    "salary": 12016854,
+    "team": "DEN"
+  },
+  {
+    "per": 15.9,
+    "player": "Will Barton",
+    "salary": 3533333,
+    "team": "DEN"
+  },
+  {
+    "per": 0,
+    "player": "Tyler Lydon",
+    "salary": 1579440,
+    "team": "DEN"
+  },
+  {
+    "per": 18,
+    "player": "Trey Lyles",
+    "salary": 2441400,
+    "team": "DEN"
+  },
+  {
+    "per": 6.3,
+    "player": "Richard Jefferson",
+    "salary": 2328652,
+    "team": "DEN"
+  },
+  {
+    "per": 18.2,
+    "player": "Paul Millsap",
+    "salary": 31269231,
+    "team": "DEN"
+  },
+  {
+    "per": 24.4,
+    "player": "Nikola Jokic",
+    "salary": 1471382,
+    "team": "DEN"
+  },
+  {
+    "per": 16.8,
+    "player": "Mason Plumlee",
+    "salary": 14041096,
+    "team": "DEN"
+  },
+  {
+    "per": 8.8,
+    "player": "Malik Beasley",
+    "salary": 1700640,
+    "team": "DEN"
+  },
+  {
+    "per": 17.4,
+    "player": "Kenneth Faried",
+    "salary": 12921348,
+    "team": "DEN"
+  },
+  {
+    "per": 10,
+    "player": "Juan Hernangomez",
+    "salary": 2076840,
+    "team": "DEN"
+  },
+  {
+    "per": 16.2,
+    "player": "Jamal Murray",
+    "salary": 3355320,
+    "team": "DEN"
+  },
+  {
+    "per": 16.6,
+    "player": "Gary Harris",
+    "salary": 2550055,
+    "team": "DEN"
+  },
+  {
+    "per": 11.6,
+    "player": "Devin Harris",
+    "salary": 4402546,
+    "team": "DEN"
+  },
+  {
+    "per": 8.4,
+    "player": "Darrell Arthur",
+    "salary": 7464912,
+    "team": "DEN"
+  },
+  {
+    "per": 9.1,
+    "player": "Stanley Johnson",
+    "salary": 3097800,
+    "team": "DET"
+  },
+  {
+    "per": 15.5,
+    "player": "Reggie Jackson",
+    "salary": 16000000,
+    "team": "DET"
+  },
+  {
+    "per": 13.6,
+    "player": "Reggie Bullock",
+    "salary": 2500000,
+    "team": "DET"
+  },
+  {
+    "per": 11.6,
+    "player": "Luke Kennard",
+    "salary": 2759280,
+    "team": "DET"
+  },
+  {
+    "per": -15.5,
+    "player": "Luis Montero",
+    "salary": 50000,
+    "team": "DET"
+  },
+  {
+    "per": 12.3,
+    "player": "Langston Galloway",
+    "salary": 6666667,
+    "team": "DET"
+  },
+  {
+    "per": 8.9,
+    "player": "Jon Leuer",
+    "salary": 10497319,
+    "team": "DET"
+  },
+  {
+    "per": 11.5,
+    "player": "James Ennis",
+    "salary": 3028410,
+    "team": "DET"
+  },
+  {
+    "per": 2.6,
+    "player": "Jameer Nelson",
+    "salary": 2262871,
+    "team": "DET"
+  },
+  {
+    "per": 15,
+    "player": "Ish Smith",
+    "salary": 6000000,
+    "team": "DET"
+  },
+  {
+    "per": 7.7,
+    "player": "Henry Ellenson",
+    "salary": 1780800,
+    "team": "DET"
+  },
+  {
+    "per": 13,
+    "player": "Eric Moreland",
+    "salary": 1739333,
+    "team": "DET"
+  },
+  {
+    "per": 12.8,
+    "player": "Dwight Buycks",
+    "salary": 748160,
+    "team": "DET"
+  },
+  {
+    "per": 18.5,
+    "player": "Blake Griffin",
+    "salary": 29512900,
+    "team": "DET"
+  },
+  {
+    "per": 13.5,
+    "player": "Anthony Tolliver",
+    "salary": 3290000,
+    "team": "DET"
+  },
+  {
+    "per": 23,
+    "player": "Andre Drummond",
+    "salary": 23775506,
+    "team": "DET"
+  },
+  {
+    "per": 16.8,
+    "player": "Zaza Pachulia",
+    "salary": 3477600,
+    "team": "GSW"
+  },
+  {
+    "per": 28.2,
+    "player": "Stephen Curry",
+    "salary": 34682550,
+    "team": "GSW"
+  },
+  {
+    "per": 11.6,
+    "player": "Shaun Livingston",
+    "salary": 7692308,
+    "team": "GSW"
+  },
+  {
+    "per": 7.4,
+    "player": "Patrick McCaw",
+    "salary": 1312611,
+    "team": "GSW"
+  },
+  {
+    "per": 15.5,
+    "player": "Omri Casspi",
+    "salary": 2106470,
+    "team": "GSW"
+  },
+  {
+    "per": 10.1,
+    "player": "Nick Young",
+    "salary": 5192000,
+    "team": "GSW"
+  },
+  {
+    "per": 16.1,
+    "player": "Klay Thompson",
+    "salary": 17826150,
+    "team": "GSW"
+  },
+  {
+    "per": 14.4,
+    "player": "Kevon Looney",
+    "salary": 1471382,
+    "team": "GSW"
+  },
+  {
+    "per": 26.2,
+    "player": "Kevin Durant",
+    "salary": 25000000,
+    "team": "GSW"
+  },
+  {
+    "per": 18.7,
+    "player": "Jordan Bell",
+    "salary": 815615,
+    "team": "GSW"
+  },
+  {
+    "per": 21.8,
+    "player": "JaVale McGee",
+    "salary": 2116955,
+    "team": "GSW"
+  },
+  {
+    "per": 16.4,
+    "player": "Draymond Green",
+    "salary": 16400000,
+    "team": "GSW"
+  },
+  {
+    "per": 21.4,
+    "player": "David West",
+    "salary": 2328652,
+    "team": "GSW"
+  },
+  {
+    "per": 10.7,
+    "player": "Damian Jones",
+    "salary": 1312611,
+    "team": "GSW"
+  },
+  {
+    "per": 11.3,
+    "player": "Andre Iguodala",
+    "salary": 14814815,
+    "team": "GSW"
+  },
+  {
+    "per": 0.6,
+    "player": "Zhou Qi",
+    "salary": 815615,
+    "team": "HOU"
+  },
+  {
+    "per": -2.4,
+    "player": "Troy Williams",
+    "salary": 1471382,
+    "team": "HOU"
+  },
+  {
+    "per": 12.1,
+    "player": "Trevor Ariza",
+    "salary": 7420912,
+    "team": "HOU"
+  },
+  {
+    "per": 14.9,
+    "player": "Tarik Black",
+    "salary": 3290000,
+    "team": "HOU"
+  },
+  {
+    "per": 12.6,
+    "player": "Ryan Anderson",
+    "salary": 19578455,
+    "team": "HOU"
+  },
+  {
+    "per": 8.4,
+    "player": "P.J. Tucker",
+    "salary": 7590035,
+    "team": "HOU"
+  },
+  {
+    "per": 17,
+    "player": "Nene Hilario",
+    "salary": 3477600,
+    "team": "HOU"
+  },
+  {
+    "per": 10.1,
+    "player": "Luc Mbah a Moute",
+    "salary": 2116955,
+    "team": "HOU"
+  },
+  {
+    "per": 7.3,
+    "player": "Joe Johnson",
+    "salary": 749905,
+    "team": "HOU"
+  },
+  {
+    "per": 30.2,
+    "player": "James Harden",
+    "salary": 28299399,
+    "team": "HOU"
+  },
+  {
+    "per": -7.3,
+    "player": "Isaiah Canaan",
+    "salary": 53465,
+    "team": "HOU"
+  },
+  {
+    "per": 14,
+    "player": "Gerald Green",
+    "salary": 947248,
+    "team": "HOU"
+  },
+  {
+    "per": 15.3,
+    "player": "Eric Gordon",
+    "salary": 12943020,
+    "team": "HOU"
+  },
+  {
+    "per": 0.2,
+    "player": "Demetrius Jackson",
+    "salary": 74159,
+    "team": "HOU"
+  },
+  {
+    "per": 24.6,
+    "player": "Clint Capela",
+    "salary": 2334520,
+    "team": "HOU"
+  },
+  {
+    "per": 24.3,
+    "player": "Chris Paul",
+    "salary": 24599495,
+    "team": "HOU"
+  },
+  {
+    "per": 11.1,
+    "player": "Briante Weber",
+    "salary": 50000,
+    "team": "HOU"
+  },
+  {
+    "per": 5.4,
+    "player": "Bobby Brown",
+    "salary": 1524305,
+    "team": "HOU"
+  },
+  {
+    "per": 23.1,
+    "player": "Victor Oladipo",
+    "salary": 21000000,
+    "team": "IND"
+  },
+  {
+    "per": 0,
+    "player": "Trey McKinney-Jones",
+    "salary": 46080,
+    "team": "IND"
+  },
+  {
+    "per": 14.7,
+    "player": "Thaddeus Young",
+    "salary": 14796348,
+    "team": "IND"
+  },
+  {
+    "per": 10.5,
+    "player": "T.J. Leaf",
+    "salary": 2028360,
+    "team": "IND"
+  },
+  {
+    "per": 17.6,
+    "player": "Myles Turner",
+    "salary": 2569920,
+    "team": "IND"
+  },
+  {
+    "per": 12.4,
+    "player": "Lance Stephenson",
+    "salary": 4180000,
+    "team": "IND"
+  },
+  {
+    "per": 10.2,
+    "player": "Joe Young",
+    "salary": 1471382,
+    "team": "IND"
+  },
+  {
+    "per": 23.2,
+    "player": "Ike Anigbogu",
+    "salary": 950000,
+    "team": "IND"
+  },
+  {
+    "per": 8.9,
+    "player": "Glenn Robinson",
+    "salary": 1524305,
+    "team": "IND"
+  },
+  {
+    "per": 17.3,
+    "player": "Domantas Sabonis",
+    "salary": 2550000,
+    "team": "IND"
+  },
+  {
+    "per": 18.9,
+    "player": "Darren Collison",
+    "salary": 10000000,
+    "team": "IND"
+  },
+  {
+    "per": 4.9,
+    "player": "Damien Wilkins",
+    "salary": 2116955,
+    "team": "IND"
+  },
+  {
+    "per": 11.2,
+    "player": "Cory Joseph",
+    "salary": 7630000,
+    "team": "IND"
+  },
+  {
+    "per": 13.8,
+    "player": "Bojan Bogdanovic",
+    "salary": 10500000,
+    "team": "IND"
+  },
+  {
+    "per": 8.5,
+    "player": "Alex Poythress",
+    "salary": 778668,
+    "team": "IND"
+  },
+  {
+    "per": 19.9,
+    "player": "Al Jefferson",
+    "salary": 9769821,
+    "team": "IND"
+  },
+  {
+    "per": 9.8,
+    "player": "Wesley Johnson",
+    "salary": 5881260,
+    "team": "LAC"
+  },
+  {
+    "per": 18.4,
+    "player": "Tobias Harris",
+    "salary": 16000000,
+    "team": "LAC"
+  },
+  {
+    "per": 8.1,
+    "player": "Sindarius Thornwell",
+    "salary": 815615,
+    "team": "LAC"
+  },
+  {
+    "per": 10.5,
+    "player": "Sean Kilpatrick",
+    "salary": 172238,
+    "team": "LAC"
+  },
+  {
+    "per": 11.1,
+    "player": "Sam Dekker",
+    "salary": 1794600,
+    "team": "LAC"
+  },
+  {
+    "per": 12.3,
+    "player": "Patrick Beverley",
+    "salary": 5513514,
+    "team": "LAC"
+  },
+  {
+    "per": 24.9,
+    "player": "Montrezl Harrell",
+    "salary": 1471382,
+    "team": "LAC"
+  },
+  {
+    "per": 11.7,
+    "player": "Milos Teodosic",
+    "salary": 6000000,
+    "team": "LAC"
+  },
+  {
+    "per": 20.5,
+    "player": "Lou Williams",
+    "salary": 7000000,
+    "team": "LAC"
+  },
+  {
+    "per": 7.2,
+    "player": "Jawun Evans",
+    "salary": 815615,
+    "team": "LAC"
+  },
+  {
+    "per": 11.4,
+    "player": "Jamil Wilson",
+    "salary": 50000,
+    "team": "LAC"
+  },
+  {
+    "per": 20.2,
+    "player": "DeAndre Jordan",
+    "salary": 22642350,
+    "team": "LAC"
+  },
+  {
+    "per": 13.9,
+    "player": "Danilo Gallinari",
+    "salary": 20559599,
+    "team": "LAC"
+  },
+  {
+    "per": 30.3,
+    "player": "Boban Marjanovic",
+    "salary": 7000000,
+    "team": "LAC"
+  },
+  {
+    "per": 9,
+    "player": "Avery Bradley",
+    "salary": 8808989,
+    "team": "LAC"
+  },
+  {
+    "per": 12.9,
+    "player": "Austin Rivers",
+    "salary": 11825000,
+    "team": "LAC"
+  },
+  {
+    "per": -1.8,
+    "player": "Vander Blue",
+    "salary": 50000,
+    "team": "LAL"
+  },
+  {
+    "per": 10.4,
+    "player": "Tyler Ennis",
+    "salary": 1524305,
+    "team": "LAL"
+  },
+  {
+    "per": 9.8,
+    "player": "Travis Wear",
+    "salary": 148318,
+    "team": "LAL"
+  },
+  {
+    "per": 7.7,
+    "player": "Thomas Bryant",
+    "salary": 815615,
+    "team": "LAL"
+  },
+  {
+    "per": 9.8,
+    "player": "Nigel Hayes",
+    "salary": 46080,
+    "team": "LAL"
+  },
+  {
+    "per": 5.5,
+    "player": "Luol Deng",
+    "salary": 17190000,
+    "team": "LAL"
+  },
+  {
+    "per": 12.5,
+    "player": "Lonzo Ball",
+    "salary": 6286560,
+    "team": "LAL"
+  },
+  {
+    "per": 14.4,
+    "player": "Kyle Kuzma",
+    "salary": 1423560,
+    "team": "LAL"
+  },
+  {
+    "per": 13.5,
+    "player": "Kentavious Caldwell-Pope",
+    "salary": 17745894,
+    "team": "LAL"
+  },
+  {
+    "per": 19.8,
+    "player": "Julius Randle",
+    "salary": 4149242,
+    "team": "LAL"
+  },
+  {
+    "per": 11.2,
+    "player": "Josh Hart",
+    "salary": 1394520,
+    "team": "LAL"
+  },
+  {
+    "per": 15.6,
+    "player": "Ivica Zubac",
+    "salary": 1312611,
+    "team": "LAL"
+  },
+  {
+    "per": 12.8,
+    "player": "Isaiah Thomas",
+    "salary": 6261395,
+    "team": "LAL"
+  },
+  {
+    "per": -3.2,
+    "player": "Derrick Williams",
+    "salary": 104059,
+    "team": "LAL"
+  },
+  {
+    "per": 8.9,
+    "player": "Corey Brewer",
+    "salary": 7579366,
+    "team": "LAL"
+  },
+  {
+    "per": 15.5,
+    "player": "Channing Frye",
+    "salary": 7420912,
+    "team": "LAL"
+  },
+  {
+    "per": 16.6,
+    "player": "Brook Lopez",
+    "salary": 22642350,
+    "team": "LAL"
+  },
+  {
+    "per": 13.9,
+    "player": "Brandon Ingram",
+    "salary": 5519400,
+    "team": "LAL"
+  },
+  {
+    "per": 10.9,
+    "player": "Andrew Bogut",
+    "salary": 2328652,
+    "team": "LAL"
+  },
+  {
+    "per": 0.9,
+    "player": "Xavier Rathan-Mayes",
+    "salary": 46080,
+    "team": "MEM"
+  },
+  {
+    "per": 11.8,
+    "player": "Wayne Selden",
+    "salary": 1312611,
+    "team": "MEM"
+  },
+  {
+    "per": 35.9,
+    "player": "Vince Hunter",
+    "salary": 50000,
+    "team": "MEM"
+  },
+  {
+    "per": 21.2,
+    "player": "Tyreke Evans",
+    "salary": 3290000,
+    "team": "MEM"
+  },
+  {
+    "per": 15.5,
+    "player": "Mike Conley",
+    "salary": 28530608,
+    "team": "MEM"
+  },
+  {
+    "per": 10.1,
+    "player": "Mario Chalmers",
+    "salary": 2106407,
+    "team": "MEM"
+  },
+  {
+    "per": 17.3,
+    "player": "Marc Gasol",
+    "salary": 22642350,
+    "team": "MEM"
+  },
+  {
+    "per": 10.5,
+    "player": "Jarell Martin",
+    "salary": 1471382,
+    "team": "MEM"
+  },
+  {
+    "per": 14,
+    "player": "JaMychal Green",
+    "salary": 8533333,
+    "team": "MEM"
+  },
+  {
+    "per": 15.6,
+    "player": "Ivan Rabb",
+    "salary": 950000,
+    "team": "MEM"
+  },
+  {
+    "per": 9.1,
+    "player": "Dillon Brooks",
+    "salary": 815615,
+    "team": "MEM"
+  },
+  {
+    "per": 16.7,
+    "player": "Deyonta Davis",
+    "salary": 1312611,
+    "team": "MEM"
+  },
+  {
+    "per": 13.7,
+    "player": "Chandler Parsons",
+    "salary": 23112004,
+    "team": "MEM"
+  },
+  {
+    "per": 16.2,
+    "player": "Brice Johnson",
+    "salary": 1331160,
+    "team": "MEM"
+  },
+  {
+    "per": 9.2,
+    "player": "Briante Weber",
+    "salary": 83129,
+    "team": "MEM"
+  },
+  {
+    "per": 19.4,
+    "player": "Brandan Wright",
+    "salary": 5179760,
+    "team": "MEM"
+  },
+  {
+    "per": 9.2,
+    "player": "Ben McLemore",
+    "salary": 5200000,
+    "team": "MEM"
+  },
+  {
+    "per": 12.7,
+    "player": "Andrew Harrison",
+    "salary": 1312611,
+    "team": "MEM"
+  },
+  {
+    "per": 12.1,
+    "player": "Wayne Ellington",
+    "salary": 6270000,
+    "team": "MIA"
+  },
+  {
+    "per": 1.8,
+    "player": "Udonis Haslem",
+    "salary": 2328652,
+    "team": "MIA"
+  },
+  {
+    "per": 13,
+    "player": "Tyler Johnson",
+    "salary": 5881260,
+    "team": "MIA"
+  },
+  {
+    "per": 12.4,
+    "player": "Rodney McGruder",
+    "salary": 1312611,
+    "team": "MIA"
+  },
+  {
+    "per": -0.7,
+    "player": "Matt Williams",
+    "salary": 50000,
+    "team": "MIA"
+  },
+  {
+    "per": 2.5,
+    "player": "Luke Babbitt",
+    "salary": 1974159,
+    "team": "MIA"
+  },
+  {
+    "per": 18,
+    "player": "Kelly Olynyk",
+    "salary": 10607169,
+    "team": "MIA"
+  },
+  {
+    "per": 11.5,
+    "player": "Justise Winslow",
+    "salary": 2705040,
+    "team": "MIA"
+  },
+  {
+    "per": 13.7,
+    "player": "Josh Richardson",
+    "salary": 1471382,
+    "team": "MIA"
+  },
+  {
+    "per": 10.6,
+    "player": "Jordan Mickey",
+    "salary": 1471382,
+    "team": "MIA"
+  },
+  {
+    "per": 15.9,
+    "player": "James Johnson",
+    "salary": 13954000,
+    "team": "MIA"
+  },
+  {
+    "per": 24.1,
+    "player": "Hassan Whiteside",
+    "salary": 23775506,
+    "team": "MIA"
+  },
+  {
+    "per": 16.8,
+    "player": "Goran Dragic",
+    "salary": 17000450,
+    "team": "MIA"
+  },
+  {
+    "per": 14.4,
+    "player": "Dwyane Wade",
+    "salary": 2328652,
+    "team": "MIA"
+  },
+  {
+    "per": 10.5,
+    "player": "Dion Waiters",
+    "salary": 11000000,
+    "team": "MIA"
+  },
+  {
+    "per": 15.6,
+    "player": "Bam Adebayo",
+    "salary": 2490360,
+    "team": "MIA"
+  },
+  {
+    "per": 17,
+    "player": "Tyler Zeller",
+    "salary": 1709538,
+    "team": "MIL"
+  },
+  {
+    "per": 8.4,
+    "player": "Tony Snell",
+    "salary": 9821429,
+    "team": "MIL"
+  },
+  {
+    "per": 10.5,
+    "player": "Thon Maker",
+    "salary": 2684160,
+    "team": "MIL"
+  },
+  {
+    "per": 9.5,
+    "player": "Sterling Brown",
+    "salary": 815615,
+    "team": "MIL"
+  },
+  {
+    "per": 11.3,
+    "player": "Sean Kilpatrick",
+    "salary": 789725,
+    "team": "MIL"
+  },
+  {
+    "per": 13.5,
+    "player": "Mirza Teletovic",
+    "salary": 10500000,
+    "team": "MIL"
+  },
+  {
+    "per": 8.7,
+    "player": "Matthew Dellavedova",
+    "salary": 9607500,
+    "team": "MIL"
+  },
+  {
+    "per": 14.3,
+    "player": "Malcolm Brogdon",
+    "salary": 1312611,
+    "team": "MIL"
+  },
+  {
+    "per": 17.4,
+    "player": "Khris Middleton",
+    "salary": 14100000,
+    "team": "MIL"
+  },
+  {
+    "per": 15.8,
+    "player": "John Henson",
+    "salary": 11422536,
+    "team": "MIL"
+  },
+  {
+    "per": 11.7,
+    "player": "Joel Bolomboy",
+    "salary": 22248,
+    "team": "MIL"
+  },
+  {
+    "per": 8,
+    "player": "Jason Terry",
+    "salary": 2328652,
+    "team": "MIL"
+  },
+  {
+    "per": 17.3,
+    "player": "Jabari Parker",
+    "salary": 6782392,
+    "team": "MIL"
+  },
+  {
+    "per": 27.7,
+    "player": "Giannis Antetokounmpo",
+    "salary": 22471910,
+    "team": "MIL"
+  },
+  {
+    "per": 7.6,
+    "player": "Gary Payton",
+    "salary": 50000,
+    "team": "MIL"
+  },
+  {
+    "per": 19.6,
+    "player": "Eric Bledsoe",
+    "salary": 14500000,
+    "team": "MIL"
+  },
+  {
+    "per": 5,
+    "player": "DeAndre Liggins",
+    "salary": 1577230,
+    "team": "MIL"
+  },
+  {
+    "per": 9.1,
+    "player": "D.J. Wilson",
+    "salary": 2135040,
+    "team": "MIL"
+  },
+  {
+    "per": 14,
+    "player": "Brandon Jennings",
+    "salary": 119010,
+    "team": "MIL"
+  },
+  {
+    "per": 14.1,
+    "player": "Tyus Jones",
+    "salary": 1471382,
+    "team": "MIN"
+  },
+  {
+    "per": 15.4,
+    "player": "Taj Gibson",
+    "salary": 14000000,
+    "team": "MIN"
+  },
+  {
+    "per": 9.3,
+    "player": "Shabazz Muhammad",
+    "salary": 1577230,
+    "team": "MIN"
+  },
+  {
+    "per": 12.9,
+    "player": "Nemanja Bjelica",
+    "salary": 3949999,
+    "team": "MIN"
+  },
+  {
+    "per": 6.3,
+    "player": "Marcus Georges-Hunt",
+    "salary": 1312611,
+    "team": "MIN"
+  },
+  {
+    "per": 24.8,
+    "player": "Karl-Anthony Towns",
+    "salary": 6216840,
+    "team": "MIN"
+  },
+  {
+    "per": 19.8,
+    "player": "Justin Patton",
+    "salary": 2247480,
+    "team": "MIN"
+  },
+  {
+    "per": 23.5,
+    "player": "Jimmy Butler",
+    "salary": 19301070,
+    "team": "MIN"
+  },
+  {
+    "per": 16.1,
+    "player": "Jeff Teague",
+    "salary": 19000000,
+    "team": "MIN"
+  },
+  {
+    "per": 13.5,
+    "player": "Jamal Crawford",
+    "salary": 4328000,
+    "team": "MIN"
+  },
+  {
+    "per": 14.2,
+    "player": "Gorgui Dieng",
+    "salary": 14112360,
+    "team": "MIN"
+  },
+  {
+    "per": 5.2,
+    "player": "Cole Aldrich",
+    "salary": 7300000,
+    "team": "MIN"
+  },
+  {
+    "per": 13.2,
+    "player": "Andrew Wiggins",
+    "salary": 7574322,
+    "team": "MIN"
+  },
+  {
+    "per": 10.1,
+    "player": "Aaron Brooks",
+    "salary": 2116955,
+    "team": "MIN"
+  },
+  {
+    "per": 6.8,
+    "player": "Solomon Hill",
+    "salary": 12236535,
+    "team": "NOP"
+  },
+  {
+    "per": 14.9,
+    "player": "Rajon Rondo",
+    "salary": 3300000,
+    "team": "NOP"
+  },
+  {
+    "per": 14.1,
+    "player": "Nikola Mirotic",
+    "salary": 12500000,
+    "team": "NOP"
+  },
+  {
+    "per": 6.3,
+    "player": "Larry Drew",
+    "salary": 74159,
+    "team": "NOP"
+  },
+  {
+    "per": 17.4,
+    "player": "Jrue Holiday",
+    "salary": 25686667,
+    "team": "NOP"
+  },
+  {
+    "per": 3.5,
+    "player": "Josh Smith",
+    "salary": 2183934,
+    "team": "NOP"
+  },
+  {
+    "per": 15.7,
+    "player": "Jordan Crawford",
+    "salary": 250000,
+    "team": "NOP"
+  },
+  {
+    "per": 9.1,
+    "player": "Ian Clark",
+    "salary": 1577230,
+    "team": "NOP"
+  },
+  {
+    "per": 11.9,
+    "player": "E'Twaun Moore",
+    "salary": 8445024,
+    "team": "NOP"
+  },
+  {
+    "per": 16.3,
+    "player": "Emeka Okafor",
+    "salary": 239204,
+    "team": "NOP"
+  },
+  {
+    "per": 22.7,
+    "player": "DeMarcus Cousins",
+    "salary": 18063850,
+    "team": "NOP"
+  },
+  {
+    "per": 8.7,
+    "player": "DeAndre Liggins",
+    "salary": 172238,
+    "team": "NOP"
+  },
+  {
+    "per": 9.4,
+    "player": "Darius Miller",
+    "salary": 2100000,
+    "team": "NOP"
+  },
+  {
+    "per": 17.4,
+    "player": "Cheick Diallo",
+    "salary": 1312611,
+    "team": "NOP"
+  },
+  {
+    "per": 28.9,
+    "player": "Anthony Davis",
+    "salary": 23775506,
+    "team": "NOP"
+  },
+  {
+    "per": 16.2,
+    "player": "Troy Williams",
+    "salary": 148318,
+    "team": "NYK"
+  },
+  {
+    "per": 22.8,
+    "player": "Trey Burke",
+    "salary": 784160,
+    "team": "NYK"
+  },
+  {
+    "per": 14.4,
+    "player": "Tim Hardaway",
+    "salary": 16500000,
+    "team": "NYK"
+  },
+  {
+    "per": 9.3,
+    "player": "Ron Baker",
+    "salary": 4328000,
+    "team": "NYK"
+  },
+  {
+    "per": 6.2,
+    "player": "Ramon Sessions",
+    "salary": 2328652,
+    "team": "NYK"
+  },
+  {
+    "per": -41.1,
+    "player": "Mindaugas Kuzminskas",
+    "salary": 3025035,
+    "team": "NYK"
+  },
+  {
+    "per": 17.7,
+    "player": "Michael Beasley",
+    "salary": 2116955,
+    "team": "NYK"
+  },
+  {
+    "per": 6.4,
+    "player": "Lance Thomas",
+    "salary": 6655325,
+    "team": "NYK"
+  },
+  {
+    "per": 19.4,
+    "player": "Kyle O'Quinn",
+    "salary": 4087500,
+    "team": "NYK"
+  },
+  {
+    "per": 20.4,
+    "player": "Kristaps Porzingis",
+    "salary": 4503600,
+    "team": "NYK"
+  },
+  {
+    "per": 15.6,
+    "player": "Joakim Noah",
+    "salary": 17765000,
+    "team": "NYK"
+  },
+  {
+    "per": 11.2,
+    "player": "Jarrett Jack",
+    "salary": 2328652,
+    "team": "NYK"
+  },
+  {
+    "per": 6.5,
+    "player": "Frank Ntilikina",
+    "salary": 3501120,
+    "team": "NYK"
+  },
+  {
+    "per": 24,
+    "player": "Enes Kanter",
+    "salary": 20566802,
+    "team": "NYK"
+  },
+  {
+    "per": 10.6,
+    "player": "Emmanuel Mudiay",
+    "salary": 3381480,
+    "team": "NYK"
+  },
+  {
+    "per": 8.9,
+    "player": "Damyean Dotson",
+    "salary": 1100000,
+    "team": "NYK"
+  },
+  {
+    "per": 12.9,
+    "player": "Courtney Lee",
+    "salary": 11747890,
+    "team": "NYK"
+  },
+  {
+    "per": 7,
+    "player": "Terrance Ferguson",
+    "salary": 1785000,
+    "team": "OKC"
+  },
+  {
+    "per": 20.8,
+    "player": "Steven Adams",
+    "salary": 22471910,
+    "team": "OKC"
+  },
+  {
+    "per": 25,
+    "player": "Russell Westbrook",
+    "salary": 28530608,
+    "team": "OKC"
+  },
+  {
+    "per": 13.2,
+    "player": "Raymond Felton",
+    "salary": 2328652,
+    "team": "OKC"
+  },
+  {
+    "per": 18.4,
+    "player": "Paul George",
+    "salary": 19508958,
+    "team": "OKC"
+  },
+  {
+    "per": 9.7,
+    "player": "Patrick Patterson",
+    "salary": 5192000,
+    "team": "OKC"
+  },
+  {
+    "per": 13.8,
+    "player": "Nick Collison",
+    "salary": 2328652,
+    "team": "OKC"
+  },
+  {
+    "per": 5.9,
+    "player": "Kyle Singler",
+    "salary": 4666500,
+    "team": "OKC"
+  },
+  {
+    "per": 5.3,
+    "player": "Josh Huestis",
+    "salary": 1471382,
+    "team": "OKC"
+  },
+  {
+    "per": 15.6,
+    "player": "Jerami Grant",
+    "salary": 1524305,
+    "team": "OKC"
+  },
+  {
+    "per": 16.6,
+    "player": "Dakari Johnson",
+    "salary": 815615,
+    "team": "OKC"
+  },
+  {
+    "per": 12.7,
+    "player": "Carmelo Anthony",
+    "salary": 26243760,
+    "team": "OKC"
+  },
+  {
+    "per": 10.9,
+    "player": "Andre Roberson",
+    "salary": 9259259,
+    "team": "OKC"
+  },
+  {
+    "per": 9.1,
+    "player": "Alex Abrines",
+    "salary": 5725000,
+    "team": "OKC"
+  },
+  {
+    "per": 7.6,
+    "player": "Wesley Iwundu",
+    "salary": 1050000,
+    "team": "ORL"
+  },
+  {
+    "per": 10.3,
+    "player": "Terrence Ross",
+    "salary": 10500000,
+    "team": "ORL"
+  },
+  {
+    "per": 13.7,
+    "player": "Shelvin Mack",
+    "salary": 6000000,
+    "team": "ORL"
+  },
+  {
+    "per": 4.1,
+    "player": "Rodney Purvis",
+    "salary": 46080,
+    "team": "ORL"
+  },
+  {
+    "per": 1.1,
+    "player": "Rashad Vaughn",
+    "salary": 166258,
+    "team": "ORL"
+  },
+  {
+    "per": 19.7,
+    "player": "Nikola Vucevic",
+    "salary": 12250000,
+    "team": "ORL"
+  },
+  {
+    "per": 13.9,
+    "player": "Marreese Speights",
+    "salary": 2116955,
+    "team": "ORL"
+  },
+  {
+    "per": 13.6,
+    "player": "Mario Hezonja",
+    "salary": 4078320,
+    "team": "ORL"
+  },
+  {
+    "per": 14.6,
+    "player": "Khem Birch",
+    "salary": 815615,
+    "team": "ORL"
+  },
+  {
+    "per": 12.8,
+    "player": "Jonathon Simmons",
+    "salary": 6300000,
+    "team": "ORL"
+  },
+  {
+    "per": 9.8,
+    "player": "Jonathan Isaac",
+    "salary": 4186320,
+    "team": "ORL"
+  },
+  {
+    "per": 15.6,
+    "player": "Evan Fournier",
+    "salary": 17000000,
+    "team": "ORL"
+  },
+  {
+    "per": 15.4,
+    "player": "D.J. Augustin",
+    "salary": 7250000,
+    "team": "ORL"
+  },
+  {
+    "per": 13.9,
+    "player": "Bismack Biyombo",
+    "salary": 17000000,
+    "team": "ORL"
+  },
+  {
+    "per": 5.5,
+    "player": "Arron Afflalo",
+    "salary": 2328652,
+    "team": "ORL"
+  },
+  {
+    "per": 16.6,
+    "player": "Aaron Gordon",
+    "salary": 5504420,
+    "team": "ORL"
+  },
+  {
+    "per": 14.6,
+    "player": "Trevor Booker",
+    "salary": 9125000,
+    "team": "PHI"
+  },
+  {
+    "per": 7,
+    "player": "Timothe Luwawu-Cabarrot",
+    "salary": 1386600,
+    "team": "PHI"
+  },
+  {
+    "per": 12.3,
+    "player": "T.J. McConnell",
+    "salary": 1471382,
+    "team": "PHI"
+  },
+  {
+    "per": 12.8,
+    "player": "Robert Covington",
+    "salary": 16698103,
+    "team": "PHI"
+  },
+  {
+    "per": 16.8,
+    "player": "Richaun Holmes",
+    "salary": 1471382,
+    "team": "PHI"
+  },
+  {
+    "per": 10.3,
+    "player": "Markelle Fultz",
+    "salary": 7026240,
+    "team": "PHI"
+  },
+  {
+    "per": 13.6,
+    "player": "Marco Belinelli",
+    "salary": 776217,
+    "team": "PHI"
+  },
+  {
+    "per": 11.9,
+    "player": "Justin Anderson",
+    "salary": 1579440,
+    "team": "PHI"
+  },
+  {
+    "per": 22.9,
+    "player": "Joel Embiid",
+    "salary": 6100266,
+    "team": "PHI"
+  },
+  {
+    "per": 7.6,
+    "player": "Jerryd Bayless",
+    "salary": 9000000,
+    "team": "PHI"
+  },
+  {
+    "per": 7.5,
+    "player": "James Michael McAdoo",
+    "salary": 50000,
+    "team": "PHI"
+  },
+  {
+    "per": -2.3,
+    "player": "Jacob Pullen",
+    "salary": 50000,
+    "team": "PHI"
+  },
+  {
+    "per": 15.6,
+    "player": "J.J. Redick",
+    "salary": 23000000,
+    "team": "PHI"
+  },
+  {
+    "per": 6.5,
+    "player": "Furkan Korkmaz",
+    "salary": 1465920,
+    "team": "PHI"
+  },
+  {
+    "per": 13.1,
+    "player": "Ersan Ilyasova",
+    "salary": 502328,
+    "team": "PHI"
+  },
+  {
+    "per": 16.1,
+    "player": "Dario Saric",
+    "salary": 2422560,
+    "team": "PHI"
+  },
+  {
+    "per": 19.8,
+    "player": "Ben Simmons",
+    "salary": 6168840,
+    "team": "PHI"
+  },
+  {
+    "per": 14.2,
+    "player": "Amir Johnson",
+    "salary": 11000000,
+    "team": "PHI"
+  },
+  {
+    "per": 14.3,
+    "player": "Tyson Chandler",
+    "salary": 13000000,
+    "team": "PHO"
+  },
+  {
+    "per": 9.7,
+    "player": "Tyler Ulis",
+    "salary": 1312611,
+    "team": "PHO"
+  },
+  {
+    "per": 10,
+    "player": "Troy Daniels",
+    "salary": 3408520,
+    "team": "PHO"
+  },
+  {
+    "per": 17.7,
+    "player": "T.J. Warren",
+    "salary": 3152931,
+    "team": "PHO"
+  },
+  {
+    "per": 15.2,
+    "player": "Shaquille Harrison",
+    "salary": 92160,
+    "team": "PHO"
+  },
+  {
+    "per": 14.2,
+    "player": "Mike James",
+    "salary": 87552,
+    "team": "PHO"
+  },
+  {
+    "per": 10.8,
+    "player": "Marquese Chriss",
+    "salary": 3073800,
+    "team": "PHO"
+  },
+  {
+    "per": 11.8,
+    "player": "Josh Jackson",
+    "salary": 5090040,
+    "team": "PHO"
+  },
+  {
+    "per": 7.3,
+    "player": "Josh Gray",
+    "salary": 92160,
+    "team": "PHO"
+  },
+  {
+    "per": 8.7,
+    "player": "Jared Dudley",
+    "salary": 10000000,
+    "team": "PHO"
+  },
+  {
+    "per": 13.7,
+    "player": "Isaiah Canaan",
+    "salary": 1069308,
+    "team": "PHO"
+  },
+  {
+    "per": 21,
+    "player": "Greg Monroe",
+    "salary": 17884176,
+    "team": "PHO"
+  },
+  {
+    "per": 13.1,
+    "player": "Elfrid Payton",
+    "salary": 3332340,
+    "team": "PHO"
+  },
+  {
+    "per": 6.6,
+    "player": "Dragan Bender",
+    "salary": 4468800,
+    "team": "PHO"
+  },
+  {
+    "per": 18.1,
+    "player": "Devin Booker",
+    "salary": 2319360,
+    "team": "PHO"
+  },
+  {
+    "per": 18.4,
+    "player": "Derrick Jones",
+    "salary": 1312611,
+    "team": "PHO"
+  },
+  {
+    "per": 5.2,
+    "player": "Davon Reed",
+    "salary": 815615,
+    "team": "PHO"
+  },
+  {
+    "per": 19.4,
+    "player": "Alex Len",
+    "salary": 4187599,
+    "team": "PHO"
+  },
+  {
+    "per": 9.3,
+    "player": "Alan Williams",
+    "salary": 6000000,
+    "team": "PHO"
+  },
+  {
+    "per": 8.2,
+    "player": "Zach Collins",
+    "salary": 3057240,
+    "team": "POR"
+  },
+  {
+    "per": 17,
+    "player": "Wade Baldwin",
+    "salary": 222476,
+    "team": "POR"
+  },
+  {
+    "per": 14.5,
+    "player": "Shabazz Napier",
+    "salary": 2361360,
+    "team": "POR"
+  },
+  {
+    "per": 9.3,
+    "player": "Pat Connaughton",
+    "salary": 1471382,
+    "team": "POR"
+  },
+  {
+    "per": 16.8,
+    "player": "Meyers Leonard",
+    "salary": 9904495,
+    "team": "POR"
+  },
+  {
+    "per": 12.6,
+    "player": "Maurice Harkless",
+    "salary": 10162922,
+    "team": "POR"
+  },
+  {
+    "per": 19.1,
+    "player": "Jusuf Nurkic",
+    "salary": 2947305,
+    "team": "POR"
+  },
+  {
+    "per": 3.8,
+    "player": "Jake Layman",
+    "salary": 1312611,
+    "team": "POR"
+  },
+  {
+    "per": 9.9,
+    "player": "Evan Turner",
+    "salary": 17131148,
+    "team": "POR"
+  },
+  {
+    "per": 15.8,
+    "player": "Ed Davis",
+    "salary": 6352531,
+    "team": "POR"
+  },
+  {
+    "per": 25.1,
+    "player": "Damian Lillard",
+    "salary": 26153057,
+    "team": "POR"
+  },
+  {
+    "per": 7.1,
+    "player": "Caleb Swanigan",
+    "salary": 1465920,
+    "team": "POR"
+  },
+  {
+    "per": 17.4,
+    "player": "C.J. McCollum",
+    "salary": 23962573,
+    "team": "POR"
+  },
+  {
+    "per": 12.4,
+    "player": "Al-Farouq Aminu",
+    "salary": 7319035,
+    "team": "POR"
+  },
+  {
+    "per": 17.3,
+    "player": "Zach Randolph",
+    "salary": 12307692,
+    "team": "SAC"
+  },
+  {
+    "per": 17.1,
+    "player": "Willie Cauley-Stein",
+    "salary": 3704160,
+    "team": "SAC"
+  },
+  {
+    "per": 10.6,
+    "player": "Vince Carter",
+    "salary": 8000000,
+    "team": "SAC"
+  },
+  {
+    "per": 14.3,
+    "player": "Skal Labissiere",
+    "salary": 1312611,
+    "team": "SAC"
+  },
+  {
+    "per": 17.5,
+    "player": "Kosta Koufos",
+    "salary": 8393000,
+    "team": "SAC"
+  },
+  {
+    "per": 9.8,
+    "player": "Justin Jackson",
+    "salary": 2365560,
+    "team": "SAC"
+  },
+  {
+    "per": 10.7,
+    "player": "Georgios Papagiannis",
+    "salary": 2301360,
+    "team": "SAC"
+  },
+  {
+    "per": 10.2,
+    "player": "Garrett Temple",
+    "salary": 8000000,
+    "team": "SAC"
+  },
+  {
+    "per": 13.1,
+    "player": "Frank Mason",
+    "salary": 1184385,
+    "team": "SAC"
+  },
+  {
+    "per": 11.2,
+    "player": "De'Aaron Fox",
+    "salary": 4609200,
+    "team": "SAC"
+  },
+  {
+    "per": 16,
+    "player": "Buddy Hield",
+    "salary": 3675480,
+    "team": "SAC"
+  },
+  {
+    "per": 9.2,
+    "player": "Bruno Caboclo",
+    "salary": 2451225,
+    "team": "SAC"
+  },
+  {
+    "per": 13.8,
+    "player": "Bogdan Bogdanovic",
+    "salary": 9470614,
+    "team": "SAC"
+  },
+  {
+    "per": 13.1,
+    "player": "Tony Parker",
+    "salary": 15453126,
+    "team": "SAS"
+  },
+  {
+    "per": 17.8,
+    "player": "Rudy Gay",
+    "salary": 8406000,
+    "team": "SAS"
+  },
+  {
+    "per": 19,
+    "player": "Pau Gasol",
+    "salary": 16000000,
+    "team": "SAS"
+  },
+  {
+    "per": 12.1,
+    "player": "Patty Mills",
+    "salary": 10714286,
+    "team": "SAS"
+  },
+  {
+    "per": 12.4,
+    "player": "Manu Ginobili",
+    "salary": 2500000,
+    "team": "SAS"
+  },
+  {
+    "per": 25.2,
+    "player": "LaMarcus Aldridge",
+    "salary": 21461010,
+    "team": "SAS"
+  },
+  {
+    "per": 15.7,
+    "player": "Kyle Anderson",
+    "salary": 2151704,
+    "team": "SAS"
+  },
+  {
+    "per": 26,
+    "player": "Kawhi Leonard",
+    "salary": 18868625,
+    "team": "SAS"
+  },
+  {
+    "per": 16.5,
+    "player": "Joffrey Lauvergne",
+    "salary": 1524305,
+    "team": "SAS"
+  },
+  {
+    "per": 15.9,
+    "player": "Derrick White",
+    "salary": 1404600,
+    "team": "SAS"
+  },
+  {
+    "per": 14.9,
+    "player": "Dejounte Murray",
+    "salary": 1312611,
+    "team": "SAS"
+  },
+  {
+    "per": 14.2,
+    "player": "Davis Bertans",
+    "salary": 1312611,
+    "team": "SAS"
+  },
+  {
+    "per": 11.5,
+    "player": "Danny Green",
+    "salary": 10000000,
+    "team": "SAS"
+  },
+  {
+    "per": 9.1,
+    "player": "Bryn Forbes",
+    "salary": 1312611,
+    "team": "SAS"
+  },
+  {
+    "per": 7.2,
+    "player": "Brandon Paul",
+    "salary": 815615,
+    "team": "SAS"
+  },
+  {
+    "per": 14.5,
+    "player": "Serge Ibaka",
+    "salary": 20061729,
+    "team": "TOR"
+  },
+  {
+    "per": 14.9,
+    "player": "Pascal Siakam",
+    "salary": 1312611,
+    "team": "TOR"
+  },
+  {
+    "per": 9.5,
+    "player": "OG Anunoby",
+    "salary": 1645200,
+    "team": "TOR"
+  },
+  {
+    "per": 8.4,
+    "player": "Norman Powell",
+    "salary": 1471382,
+    "team": "TOR"
+  },
+  {
+    "per": 34.9,
+    "player": "Nigel Hayes",
+    "salary": 46080,
+    "team": "TOR"
+  },
+  {
+    "per": 10.5,
+    "player": "Malachi Richardson",
+    "salary": 1504560,
+    "team": "TOR"
+  },
+  {
+    "per": 17.5,
+    "player": "Lucas Nogueira",
+    "salary": 2947305,
+    "team": "TOR"
+  },
+  {
+    "per": 19.6,
+    "player": "Kyle Lowry",
+    "salary": 28703704,
+    "team": "TOR"
+  },
+  {
+    "per": 22.3,
+    "player": "Jonas Valanciunas",
+    "salary": 15460675,
+    "team": "TOR"
+  },
+  {
+    "per": 17,
+    "player": "Jakob Poeltl",
+    "salary": 2825640,
+    "team": "TOR"
+  },
+  {
+    "per": 16.2,
+    "player": "Fred VanVleet",
+    "salary": 1312611,
+    "team": "TOR"
+  },
+  {
+    "per": 21.3,
+    "player": "DeMar DeRozan",
+    "salary": 27739975,
+    "team": "TOR"
+  },
+  {
+    "per": 16.8,
+    "player": "Delon Wright",
+    "salary": 1645200,
+    "team": "TOR"
+  },
+  {
+    "per": 13.2,
+    "player": "C.J. Miles",
+    "salary": 7936509,
+    "team": "TOR"
+  },
+  {
+    "per": 9.2,
+    "player": "Alfonzo McKinnie",
+    "salary": 815615,
+    "team": "TOR"
+  },
+  {
+    "per": 9.5,
+    "player": "Tony Bradley",
+    "salary": 1414920,
+    "team": "UTA"
+  },
+  {
+    "per": 15.9,
+    "player": "Thabo Sefolosha",
+    "salary": 5250000,
+    "team": "UTA"
+  },
+  {
+    "per": 20.9,
+    "player": "Rudy Gobert",
+    "salary": 21974719,
+    "team": "UTA"
+  },
+  {
+    "per": 10.4,
+    "player": "Royce O'Neale",
+    "salary": 815615,
+    "team": "UTA"
+  },
+  {
+    "per": 15,
+    "player": "Ricky Rubio",
+    "salary": 14275000,
+    "team": "UTA"
+  },
+  {
+    "per": 12.3,
+    "player": "Raul Neto",
+    "salary": 1471382,
+    "team": "UTA"
+  },
+  {
+    "per": 134.1,
+    "player": "Naz Mitrou-Long",
+    "salary": 92160,
+    "team": "UTA"
+  },
+  {
+    "per": -2.9,
+    "player": "Nate Wolters",
+    "salary": 50000,
+    "team": "UTA"
+  },
+  {
+    "per": 13,
+    "player": "Jonas Jerebko",
+    "salary": 4000000,
+    "team": "UTA"
+  },
+  {
+    "per": 14.3,
+    "player": "Joe Ingles",
+    "salary": 14136364,
+    "team": "UTA"
+  },
+  {
+    "per": 10.6,
+    "player": "Jae Crowder",
+    "salary": 6796117,
+    "team": "UTA"
+  },
+  {
+    "per": 15.3,
+    "player": "Ekpe Udoh",
+    "salary": 3200000,
+    "team": "UTA"
+  },
+  {
+    "per": 16.5,
+    "player": "Donovan Mitchell",
+    "salary": 2621280,
+    "team": "UTA"
+  },
+  {
+    "per": 18.8,
+    "player": "Derrick Favors",
+    "salary": 12000000,
+    "team": "UTA"
+  },
+  {
+    "per": 21.9,
+    "player": "Dante Exum",
+    "salary": 4992385,
+    "team": "UTA"
+  },
+  {
+    "per": 13.1,
+    "player": "Alec Burks",
+    "salary": 10845506,
+    "team": "UTA"
+  },
+  {
+    "per": 15.4,
+    "player": "Tomas Satoransky",
+    "salary": 3000000,
+    "team": "WAS"
+  },
+  {
+    "per": 11.2,
+    "player": "Tim Frazier",
+    "salary": 2000000,
+    "team": "WAS"
+  },
+  {
+    "per": 14.2,
+    "player": "Ramon Sessions",
+    "salary": 263124,
+    "team": "WAS"
+  },
+  {
+    "per": 18.4,
+    "player": "Otto Porter",
+    "salary": 24773250,
+    "team": "WAS"
+  },
+  {
+    "per": 13.7,
+    "player": "Mike Scott",
+    "salary": 1709538,
+    "team": "WAS"
+  },
+  {
+    "per": 13.3,
+    "player": "Markieff Morris",
+    "salary": 8000000,
+    "team": "WAS"
+  },
+  {
+    "per": 14.9,
+    "player": "Marcin Gortat",
+    "salary": 12782609,
+    "team": "WAS"
+  },
+  {
+    "per": 12.2,
+    "player": "Kelly Oubre",
+    "salary": 2093040,
+    "team": "WAS"
+  },
+  {
+    "per": 18.5,
+    "player": "John Wall",
+    "salary": 18063850,
+    "team": "WAS"
+  },
+  {
+    "per": 12.3,
+    "player": "Jodie Meeks",
+    "salary": 3290000,
+    "team": "WAS"
+  },
+  {
+    "per": 8.2,
+    "player": "Jason Smith",
+    "salary": 5225000,
+    "team": "WAS"
+  },
+  {
+    "per": 12.9,
+    "player": "Ian Mahinmi",
+    "salary": 16661641,
+    "team": "WAS"
+  },
+  {
+    "per": 15.8,
+    "player": "Chris McCullough",
+    "salary": 1471382,
+    "team": "WAS"
+  },
+  {
+    "per": 18.7,
+    "player": "Bradley Beal",
+    "salary": 23775506,
+    "team": "WAS"
+  }
+]
