@@ -8,7 +8,6 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
 import {
   AnalyticsService,
   LayoutService,
-  PlayerService,
   StateService,
 } from './utils';
 import { UserData } from './data/users';

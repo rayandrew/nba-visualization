@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { of as observableOf,  Observable, forkJoin } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { Team, TeamData } from '../data/team';
 
 import * as TeamDataset from '../team_dataset.json';
