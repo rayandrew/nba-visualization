@@ -30,6 +30,7 @@ import { CountryOrderData } from './data/country-order';
 import { StatsProgressBarData } from './data/stats-progress-bar';
 import { VisitorsAnalyticsData } from './data/visitors-analytics';
 import { SecurityCamerasData } from './data/security-cameras';
+import { TeamData } from './data/team';
 
 import { UserService } from './mock/users.service';
 import { ElectricityService } from './mock/electricity.service';
@@ -51,6 +52,7 @@ import { StatsProgressBarService } from './mock/stats-progress-bar.service';
 import { VisitorsAnalyticsService } from './mock/visitors-analytics.service';
 import { SecurityCamerasService } from './mock/security-cameras.service';
 import { MockDataModule } from './mock/mock-data.module';
+import { TeamService } from './mock/team.service';
 
 const socialLinks = [
   {
@@ -90,6 +92,8 @@ const DATA_SERVICES = [
   { provide: StatsProgressBarData, useClass: StatsProgressBarService },
   { provide: VisitorsAnalyticsData, useClass: VisitorsAnalyticsService },
   { provide: SecurityCamerasData, useClass: SecurityCamerasService },
+
+  { provide: TeamData, useClass: TeamService },
 ];
 
 export class NbSimpleRoleProvider extends NbRoleProvider {
@@ -139,7 +143,6 @@ export const NB_CORE_PROVIDERS = [
   },
   AnalyticsService,
   LayoutService,
-  PlayerService,
   StateService,
 ];
 
