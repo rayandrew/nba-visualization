@@ -30,8 +30,7 @@
     "interface-over-type-literal": true,
     "label-position": true,
     "max-line-length": [
-      true,
-      120
+      false
     ],
     "member-access": false,
     "no-arg": true,
