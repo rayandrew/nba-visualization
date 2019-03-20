@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, OnDestroy, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, Input } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
-import * as playersJSONFile from '../../../@core/players.json'
+import * as playersJSONFile from '../../../@core/players.json';
 
 const playersJSON = playersJSONFile['default'];
 
@@ -29,11 +29,11 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
   }
 
   convertPlayerToEachTeam() {
-		let scatterData = new Map<string, Array<Array<PlayerScatterChart>>>();
+		const scatterData = new Map<string, Array<Array<PlayerScatterChart>>>();
 		let team: string;
 		let tempPlayer: Array<PlayerScatterChart>;
 		let tempArrayPlayer: Array<Array<PlayerScatterChart>>;
-		let teams: Array<string> = [];
+		const teams: Array<string> = [];
 		playersJSON.forEach(player => {
 			team = player.team;
 			if (scatterData.has(team)) {
@@ -46,14 +46,14 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
 				tempPlayer = [player.per, player.salary, player.player];
 				scatterData.set(team, [tempPlayer]);
 			}
-		})
+		});
 		return {'scatterData': scatterData, 'teams': teams};
 	}
 
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
 
-			let players = this.convertPlayerToEachTeam().scatterData
+			const players = this.convertPlayerToEachTeam().scatterData;
 
       const colors = config.variables;
 			const echarts: any = config.variables.echarts;
@@ -67,13 +67,13 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             type: 'shadow',
 					},
 					formatter: function(params) {
-						var colorSpan = color => '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + color + '"></span>';
-						let rez = '<p>' + params.data[2] + '</p>' +
-							'<span>' + colorSpan(params.color) + ' PER : ' + params.data[0] + '</span><br>' + 
-							'<span>' + colorSpan(params.color) + ' Salary : ' + params.data[1] + '</span>'
-						
+						const colorSpan = color => '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:' + color + '"></span>';
+						const rez = '<p>' + params.data[2] + '</p>' +
+							'<span>' + colorSpan(params.color) + ' PER : ' + params.data[0] + '</span><br>' +
+							'<span>' + colorSpan(params.color) + ' Salary : ' + params.data[1] + '</span>';
+
 						return rez;
-					}
+					},
         },
         xAxis: [
           {
@@ -127,7 +127,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
 					symbolSize: 10,
 					data: players.get(this.team),
 					type: 'scatter',
-        }]
+        }],
       };
     });
   }
