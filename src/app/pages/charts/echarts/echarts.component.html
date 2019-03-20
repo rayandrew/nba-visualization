@@ -1,65 +1,42 @@
 <div class="row">
-  <div class="col-lg-6">
+  <!-- <div class="col-lg-4" *ngFor="let asdf of teams">
     <nb-card>
-      <nb-card-header>Pie</nb-card-header>
+      <nb-card-header>Not Implemented</nb-card-header>
       <nb-card-body>
-        <ngx-echarts-pie></ngx-echarts-pie>
+        <ngx-echarts-scatter [team]="asdf"></ngx-echarts-scatter>
+      </nb-card-body>
+    </nb-card>
+  </div> -->
+  <div class="col-lg-4">
+    <nb-card class="scatter">
+      <nb-card-header class="scatter-header">Atlanta Hawks</nb-card-header>
+      <nb-card-body>
+        <ngx-echarts-scatter team="ATL"></ngx-echarts-scatter>
       </nb-card-body>
     </nb-card>
   </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Bar</nb-card-header>
+  <div class="col-lg-4">
+    <nb-card class="scatter">
+      <nb-card-header class="scatter-header">Boston Celtics</nb-card-header>
       <nb-card-body>
-        <ngx-echarts-bar></ngx-echarts-bar>
+        <ngx-echarts-scatter team="BOS"></ngx-echarts-scatter>
       </nb-card-body>
     </nb-card>
   </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Line</nb-card-header>
+  <div class="col-lg-4">
+    <nb-card class="scatter">
+      <nb-card-header class="scatter-header">Brooklyn Nets</nb-card-header>
       <nb-card-body>
-        <ngx-echarts-line></ngx-echarts-line>
+        <ngx-echarts-scatter team="BRK"></ngx-echarts-scatter>
       </nb-card-body>
     </nb-card>
   </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Multiple x-axis</nb-card-header>
+
+  <div class="col-lg-4">
+    <nb-card class="scatter">
+      <nb-card-header class="scatter-header">Chicago Bulls</nb-card-header>
       <nb-card-body>
-        <ngx-echarts-multiple-xaxis></ngx-echarts-multiple-xaxis>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Area Stack</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-area-stack></ngx-echarts-area-stack>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Bar Animation</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-bar-animation></ngx-echarts-bar-animation>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Radar</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-radar></ngx-echarts-radar>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Graph</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-graph></ngx-echarts-graph>
+        <ngx-echarts-scatter team="CHI"></ngx-echarts-scatter>
       </nb-card-body>
     </nb-card>
   </div>
