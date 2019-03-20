@@ -25,6 +25,7 @@ import { CountryOrderData } from './data/country-order';
 import { StatsProgressBarData } from './data/stats-progress-bar';
 import { VisitorsAnalyticsData } from './data/visitors-analytics';
 import { TeamData } from './data/team';
+import { PlayerData } from './data/player';
 
 import { UserService } from './mock/users.service';
 import { SmartTableService } from './mock/smart-table.service';
@@ -42,6 +43,7 @@ import { StatsProgressBarService } from './mock/stats-progress-bar.service';
 import { VisitorsAnalyticsService } from './mock/visitors-analytics.service';
 import { MockDataModule } from './mock/mock-data.module';
 import { TeamService } from './mock/team.service';
+import { PlayerService } from './mock/player.service';
 
 const socialLinks = [
   {
@@ -77,6 +79,7 @@ const DATA_SERVICES = [
   { provide: StatsProgressBarData, useClass: StatsProgressBarService },
   { provide: VisitorsAnalyticsData, useClass: VisitorsAnalyticsService },
   { provide: TeamData, useClass: TeamService },
+  { provide: PlayerData, useClass: PlayerService },
 ];
 
 export class NbSimpleRoleProvider extends NbRoleProvider {

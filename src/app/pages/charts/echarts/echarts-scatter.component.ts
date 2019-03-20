@@ -1,14 +1,9 @@
 import { AfterViewInit, Component, OnDestroy, Input } from '@angular/core';
+import { Observable } from 'rxjs';
+
 import { NbThemeService } from '@nebular/theme';
-import * as playersJSONFile from '../../../@core/players.json';
 
-const playersJSON = playersJSONFile['default'];
-
-interface PlayerScatterChart {
-  per: number;
-  salary: number;
-  player: string;
-}
+import { PlayerChartRequiredData } from '../../../@core/data/player';
 
 @Component({
   selector: 'ngx-echarts-scatter',
@@ -20,39 +15,14 @@ interface PlayerScatterChart {
 export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
   options: any = {};
   themeSubscription: any;
-  teams: Array<string> = this.convertPlayerToEachTeam().teams;
 
-  @Input() team: string;
+  @Input() playerChartData: PlayerChartRequiredData[];
 
   constructor(private theme: NbThemeService) {
   }
 
-  convertPlayerToEachTeam() {
-    const scatterData = new Map<string, Array<Array<PlayerScatterChart>>>();
-    let team: string;
-    let tempPlayer: Array<PlayerScatterChart>;
-    let tempArrayPlayer: Array<Array<PlayerScatterChart>>;
-    const teams: Array<string> = [];
-    playersJSON.forEach(player => {
-      team = player.team;
-      if (scatterData.has(team)) {
-        tempArrayPlayer = scatterData.get(team);
-        tempPlayer = [player.per, player.salary, player.player];
-        tempArrayPlayer.push(tempPlayer);
-        scatterData.set(team, tempArrayPlayer);
-      } else {
-        teams.push(player.team);
-        tempPlayer = [player.per, player.salary, player.player];
-        scatterData.set(team, [tempPlayer]);
-      }
-    });
-    return {'scatterData': scatterData, 'teams': teams};
-  }
-
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
-
-      const players = this.convertPlayerToEachTeam().scatterData;
 
       const colors = config.variables;
       const echarts: any = config.variables.echarts;
@@ -128,7 +98,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
         },
         series: [{
           symbolSize: 10,
-          data: players.get(this.team),
+          data: this.playerChartData,
           type: 'scatter',
         }],
       };

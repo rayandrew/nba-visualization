@@ -1,43 +1,24 @@
 <div class="row">
-  <!-- <div class="col-lg-4" *ngFor="let asdf of teams">
-    <nb-card>
-      <nb-card-header>Not Implemented</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-scatter [team]="asdf"></ngx-echarts-scatter>
-      </nb-card-body>
-    </nb-card>
-  </div> -->
-  <div class="col-lg-4">
-    <nb-card class="scatter">
-      <nb-card-header class="scatter-header">Atlanta Hawks</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-scatter team="ATL"></ngx-echarts-scatter>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-4">
-    <nb-card class="scatter">
-      <nb-card-header class="scatter-header">Boston Celtics</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-scatter team="BOS"></ngx-echarts-scatter>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-4">
-    <nb-card class="scatter">
-      <nb-card-header class="scatter-header">Brooklyn Nets</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-scatter team="BRK"></ngx-echarts-scatter>
-      </nb-card-body>
-    </nb-card>
-  </div>
-
-  <div class="col-lg-4">
-    <nb-card class="scatter">
-      <nb-card-header class="scatter-header">Chicago Bulls</nb-card-header>
-      <nb-card-body>
-        <ngx-echarts-scatter team="CHI"></ngx-echarts-scatter>
-      </nb-card-body>
-    </nb-card>
-  </div>
-</div>
+  <ng-container *ngIf="teamDetails | async as teams">
+    <div class="col-12">
+      <nb-card class="bar">
+        <nb-card-header class="bar-header">Team Performance</nb-card-header>
+        <nb-card-body>
+          <ngx-echarts-bar [teamDetail]="teams"></ngx-echarts-bar>
+        </nb-card-body>
+      </nb-card>
+    </div>
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let team of teams[0]">
+        <nb-card class="scatter">
+          <nb-card-header class="scatter-header">{{ team }}</nb-card-header>
+          <nb-card-body>
+            <ng-container *ngIf="playersChartData | async as chartData">
+              <ngx-echarts-scatter [playerChartData]="chartData[team]"></ngx-echarts-scatter>
+            </ng-container>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+  </ng-container>
+ </div>

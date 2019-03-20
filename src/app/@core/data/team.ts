@@ -7,7 +7,10 @@ export interface Team {
   salary: number;
 }
 
+export type TeamDetail = [string[], object, number[], number[], number[]];
+
 export abstract class TeamData {
   abstract getTeamData(): Observable<Team[]>;
-  abstract getGroupedTeamData(): Observable<[string[], object, number[], number[], number[]]>;
+  abstract getTeamNames(): Observable<string[]>;
+  abstract getGroupedTeamData(): Observable<TeamDetail>;
 }

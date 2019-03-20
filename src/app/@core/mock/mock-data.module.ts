@@ -17,6 +17,7 @@ import { CountryOrderService } from './country-order.service';
 import { StatsProgressBarService } from './stats-progress-bar.service';
 import { VisitorsAnalyticsService } from './visitors-analytics.service';
 import { TeamService } from './team.service';
+import { PlayerService } from './player.service';
 
 
 const SERVICES = [
@@ -36,6 +37,7 @@ const SERVICES = [
   StatsProgressBarService,
   VisitorsAnalyticsService,
   TeamService,
+  PlayerService,
 ];
 
 @NgModule({

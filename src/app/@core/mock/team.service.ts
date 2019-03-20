@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { of as observableOf,  Observable, forkJoin } from 'rxjs';
-import { Team, TeamData } from '../data/team';
+import { Team, TeamData, TeamDetail } from '../data/team';
 
 import * as TeamDataset from '../team_dataset.json';
 
@@ -10,10 +10,6 @@ export class TeamService extends TeamData {
   private teamData: Team[] = ((<any> TeamDataset).default)
     .slice()
     .sort((a, b) => a.win - b.win);
-
-  private getTeamNames(): Observable<string[]> {
-    return observableOf(this.teamData.map(({ team }) => team));
-  }
 
   private getTeamWin(): Observable<number[]> {
     return observableOf(this.teamData.map(({ win }) => win));
@@ -41,11 +37,15 @@ export class TeamService extends TeamData {
     }, {}));
   }
 
+  getTeamNames(): Observable<string[]> {
+    return observableOf(this.teamData.map(({ team }) => team));
+  }
+
   getTeamData(): Observable<Team[]> {
     return observableOf(this.teamData);
   }
 
-  getGroupedTeamData(): Observable<[string[], object, number[], number[], number[]]> {
+  getGroupedTeamData(): Observable<TeamDetail> {
     return forkJoin(
       this.getTeamNames(),
       this.getTeamPicture(),

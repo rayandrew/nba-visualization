@@ -8,12 +8,17 @@ export interface Player {
   team: string;
 }
 
-export interface PlayerChart {
-  label: string;
-  value: number;
+export interface PlayerChartRequiredData {
+  per: number;
+  salary: number;
+  player: string;
+}
+
+export interface PlayerChartData {
+  [key: string]: Array<Array<PlayerChartRequiredData>>;
 }
 
 export abstract class PlayerData {
-  abstract getListData(): Observable<Player[]>;
-  abstract getChartData(): Observable<PlayerChart[]>;
+  abstract getPlayerChartData(): Observable<PlayerChartData>;
+  abstract getAllPlayers(): Observable<Player[]>;
 }

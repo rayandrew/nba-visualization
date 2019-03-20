@@ -1,45 +1,31 @@
 
 import { Injectable } from '@angular/core';
 import { of as observableOf, Observable } from 'rxjs';
-import { Player, PlayerChart, PlayerData } from '../data/player';
+import { Player, PlayerChartData, PlayerData } from '../data/player';
 
 import * as Players from '../players.json';
 
 @Injectable()
 export class PlayerService extends PlayerData {
 
-  private listData: Player[] = Players;
+  private listPlayers: Player[] = (<any> Players).default;
 
-  private chartPoints = [
-    490, 490, 495, 500,
-    505, 510, 520, 530,
-    550, 580, 630, 720,
-    800, 840, 860, 870,
-    870, 860, 840, 800,
-    720, 200, 145, 130,
-    130, 145, 200, 570,
-    635, 660, 670, 670,
-    660, 630, 580, 460,
-    380, 350, 340, 340,
-    340, 340, 340, 340,
-    340, 340, 340,
-  ];
+  getPlayerChartData(): Observable<PlayerChartData> {
 
-  chartData: PlayerChart[];
+    const scatterData = this.listPlayers.reduce((acc, { team, player, salary, per }) => {
+      if (acc[team]) {
+        acc[team].push([per, salary, player]);
+      } else {
+        acc[team] = [[per, salary, player]];
+      }
 
-  constructor() {
-    super();
-    this.chartData = this.chartPoints.map((p, index) => ({
-      label: (index % 5 === 3) ? `${Math.round(index / 5)}` : '',
-      value: p,
-    }));
+      return acc;
+    }, {});
+
+    return observableOf(scatterData);
   }
 
-  getListData(): Observable<Player[]> {
-    return observableOf(this.listData);
-  }
-
-  getChartData(): Observable<PlayerChart[]> {
-    return observableOf(this.chartData);
+  getAllPlayers(): Observable<Player[]> {
+    return observableOf(this.listPlayers);
   }
 }
