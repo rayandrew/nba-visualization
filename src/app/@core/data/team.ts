@@ -9,5 +9,5 @@ export interface Team {
 
 export abstract class TeamData {
   abstract getTeamData(): Observable<Team[]>;
-  abstract getGroupedTeamData(): Observable<[string[], number[], number[], number[]]>;
+  abstract getGroupedTeamData(): Observable<[string[], object, number[], number[], number[]]>;
 }

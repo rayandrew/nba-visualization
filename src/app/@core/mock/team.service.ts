@@ -27,13 +27,28 @@ export class TeamService extends TeamData {
     return observableOf(this.teamData.map(({ salary }) => salary));
   }
 
+  private getTeamPicture(): Observable<object> {
+    return observableOf(this.teamData.reduce((acc, { team }) => {
+      acc[team] = {
+        height: 40,
+        align: 'center',
+        backgroundColor: {
+          image: `assets/images/teams/${team}.gif`,
+        },
+      };
+
+      return acc;
+    }, {}));
+  }
+
   getTeamData(): Observable<Team[]> {
     return observableOf(this.teamData);
   }
 
-  getGroupedTeamData(): Observable<[string[], number[], number[], number[]]> {
+  getGroupedTeamData(): Observable<[string[], object, number[], number[], number[]]> {
     return forkJoin(
       this.getTeamNames(),
+      this.getTeamPicture(),
       this.getTeamWin(),
       this.getTeamLose(),
       this.getTeamSalary(),

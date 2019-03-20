@@ -8,7 +8,7 @@ import { TeamService } from '../../../@core/mock/team.service';
   template: `
     <div echarts
          [options]="options"
-         class="echart">
+    >
     </div>
   `,
 })
@@ -24,7 +24,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
       this.teamSubscription = this.teamService
         .getGroupedTeamData()
-        .subscribe(([teamNames, teamWins, teamLoses, teamSalaries]) => {
+        .subscribe(([teamNames, teamPics, teamWins, teamLoses, teamSalaries]) => {
 
           const colors: any = config.variables;
           const echarts: any = config.variables.echarts;
@@ -47,6 +47,10 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             xAxis: [
               {
                 type: 'value',
+                boundaryGap: [0, 0.1],
+                axisTick: {
+                  alignWithLabel: true,
+                },
                 axisLine: {
                   lineStyle: {
                     color: echarts.axisLineColor,
@@ -58,6 +62,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
                   },
                 },
                 axisLabel: {
+                  interval: 0,
                   textStyle: {
                     color: echarts.textColor,
                   },
@@ -77,6 +82,17 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
                   },
                 },
                 axisLabel: {
+                  interval: 0,
+                  formatter: function (value) {
+                    return '{' + value + '| }\n{value|' + value + '}';
+                  },
+                  rich: {
+                    value: {
+                      lineHeight: 30,
+                      align: 'center',
+                    },
+                    ...teamPics,
+                  },
                   textStyle: {
                     color: echarts.textColor,
                   },
@@ -87,8 +103,10 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
               {
                 name: 'Win',
                 type: 'bar',
-                barWidth: '60%',
+                // barWidth: '200%',
                 data: teamWins,
+                // barWidth: 10,
+                barCategoryGap: '50%',
               },
             ],
           };
