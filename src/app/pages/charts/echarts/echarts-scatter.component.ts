@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, OnDestroy, Input } from '@angular/core';
-import { Observable } from 'rxjs';
 
 import { NbThemeService } from '@nebular/theme';
 

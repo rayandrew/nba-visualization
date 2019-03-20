@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, Input } from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { PlayerChartData } from '../../../@core/data/player';
 import { TeamDetail } from '../../../@core/data/team';

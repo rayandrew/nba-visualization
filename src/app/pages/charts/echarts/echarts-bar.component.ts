@@ -3,8 +3,6 @@ import { NbThemeService } from '@nebular/theme';
 
 import { TeamDetail } from '../../../@core/data/team';
 
-import { TeamService } from '../../../@core/mock/team.service';
-
 @Component({
   selector: 'ngx-echarts-bar',
   template: `
@@ -26,7 +24,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
-      const [teamNames, teamPics, teamWins, teamLoses, teamSalaries] = this.teamDetail;
+      const [teamNames, teamPics, teamWins] = this.teamDetail;
 
       const colors: any = config.variables;
       const echarts: any = config.variables.echarts;
