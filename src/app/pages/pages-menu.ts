@@ -7,7 +7,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/dashboard',
     home: true,
   },
-    {
+  {
     title: 'Charts',
     icon: 'nb-bar-chart',
     link: '/pages/charts/echarts',
