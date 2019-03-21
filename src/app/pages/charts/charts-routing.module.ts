@@ -9,26 +9,16 @@ import { EchartsComponent } from './echarts/echarts.component';
 const routes: Routes = [{
   path: '',
   component: ChartsComponent,
-  children: [
-  {
+  children: [{
     path: 'echarts',
     component: EchartsComponent,
-  },
-  // {
-  //   path: 'd3',
-  //   component: D3Component,
-  // },
-  // {
-  //   path: 'chartjs',
-  //   component: ChartjsComponent,
-  // }
-  ],
+  }],
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-}
+})
 export class ChartsRoutingModule { }
 
 export const routedComponents = [

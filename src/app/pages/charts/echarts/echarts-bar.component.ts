@@ -103,9 +103,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           {
             name: 'Win',
             type: 'bar',
-            // barWidth: '200%',
             data: teamWins,
-            // barWidth: 10,
             barCategoryGap: '50%',
           },
         ],
