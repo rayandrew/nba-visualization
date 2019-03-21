@@ -35,14 +35,19 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             type: 'shadow',
         },
           formatter: function({ data, color }) {
+						let currency = new Intl.NumberFormat('en-US', {
+							style: 'currency',
+							currency: 'USD',
+						});
+
             const colorSpan =
               bgColor =>
               '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'
               + bgColor
               + '"></span>';
-            const rez = '<p>' + data[2] + '</p>' +
+            const rez = '<p style="margin-bottom: 5px">' + data[2] + '</p>' +
               '<span>' + colorSpan(color) + ' PER : ' + data[0] + '</span><br>' +
-              '<span>' + colorSpan(color) + ' Salary : ' + data[1] + '</span>';
+              '<span>' + colorSpan(color) + ' Salary : ' + currency.format(data[1]) + '</span>';
 
             return rez;
           },
