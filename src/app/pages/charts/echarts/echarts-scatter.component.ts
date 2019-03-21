@@ -35,10 +35,10 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             type: 'shadow',
         },
           formatter: function({ data, color }) {
-						let currency = new Intl.NumberFormat('en-US', {
-							style: 'currency',
-							currency: 'USD',
-						});
+            const currency = new Intl.NumberFormat('en-US', {
+              style: 'currency',
+              currency: 'USD',
+            });
 
             const colorSpan =
               bgColor =>
