@@ -41,6 +41,10 @@ export class TeamService extends TeamData {
     return observableOf(this.teamData.map(({ team }) => team));
   }
 
+  getTeamFullNames(): Observable<string[]> {
+    return observableOf(this.teamData.map(({ team_fullname }) => team_fullname))
+  }
+
   getTeamData(): Observable<Team[]> {
     return observableOf(this.teamData);
   }

@@ -49,6 +49,7 @@
       padding: 0 nb-theme(padding);
       font-size: 1.75rem;
       font-weight: nb-theme(font-weight-bolder);
+      color: nb-theme(color-fg-text);
       @include nb-ltr(border-left, 1px solid nb-theme(separator));
       @include nb-rtl(border-right, 1px solid nb-theme(separator));
       white-space: nowrap;

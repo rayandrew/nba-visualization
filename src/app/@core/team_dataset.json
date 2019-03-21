@@ -3,180 +3,210 @@
     "team": "ATL",
     "win": 24,
     "lose": 58,
-    "salary": 80997929
+    "salary": 80997929,
+    "team_fullname": "Atlanta Hawks"
   },
   {
     "team": "BRK",
     "win": 28,
     "lose": 54,
-    "salary": 90489772
+    "salary": 90489772,
+    "team_fullname": "Brooklyn Nets"
   },
   {
     "team": "BOS",
     "win": 55,
     "lose": 27,
-    "salary": 114917104
+    "salary": 114917104,
+    "team_fullname": "Boston Celtics"
   },
   {
     "team": "CHO",
     "win": 36,
     "lose": 46,
-    "salary": 117228164
+    "salary": 117228164,
+    "team_fullname": "Charlotte Hornets"
   },
   {
     "team": "CHI",
     "win": 27,
     "lose": 55,
-    "salary": 56318128
+    "salary": 56318128,
+    "team_fullname": "Chicago Bulls"
   },
   {
     "team": "CLE",
     "win": 50,
     "lose": 32,
-    "salary": 137242469
+    "salary": 137242469,
+    "team_fullname": "Cleveland Cavaliers"
   },
   {
     "team": "DAL",
     "win": 24,
     "lose": 58,
-    "salary": 82427191
+    "salary": 82427191,
+    "team_fullname": "Dallas Maverick"
   },
   {
     "team": "DEN",
     "win": 46,
     "lose": 36,
-    "salary": 103153049
+    "salary": 103153049,
+    "team_fullname": "Denver Nuggets"
   },
   {
     "team": "DET",
     "win": 39,
     "lose": 43,
-    "salary": 113709046
+    "salary": 113709046,
+    "team_fullname": "Detroit Pistons"
   },
   {
     "team": "GSW",
     "win": 58,
     "lose": 24,
-    "salary": 136549719
+    "salary": 136549719,
+    "team_fullname": "Golden State Warriors"
   },
   {
     "team": "HOU",
     "win": 65,
     "lose": 17,
-    "salary": 117336470
+    "salary": 117336470,
+    "team_fullname": "Houston Rockets"
   },
   {
     "team": "IND",
     "win": 48,
     "lose": 34,
-    "salary": 91911839
+    "salary": 91911839,
+    "team_fullname": "Indiana Pacers"
   },
   {
     "team": "LAC",
     "win": 42,
     "lose": 40,
-    "salary": 116350162
+    "salary": 116350162,
+    "team_fullname": "Los Angeles Clippers"
   },
   {
     "team": "LAL",
     "win": 35,
     "lose": 47,
-    "salary": 103942839
+    "salary": 103942839,
+    "team_fullname": "Los Angeles Lakers"
   },
   {
     "team": "MEM",
     "win": 22,
     "lose": 60,
-    "salary": 107279661
+    "salary": 107279661,
+    "team_fullname": "Memphis Grizzlies"
   },
   {
     "team": "MIA",
     "win": 44,
     "lose": 38,
-    "salary": 104620623
+    "salary": 104620623,
+    "team_fullname": "Miami Heat"
   },
   {
     "team": "MIL",
     "win": 44,
     "lose": 38,
-    "salary": 112749596
+    "salary": 112749596,
+    "team_fullname": "Milwaukee Bucks"
   },
   {
     "team": "MIN",
     "win": 47,
     "lose": 35,
-    "salary": 104508249
+    "salary": 104508249,
+    "team_fullname": "Minnesota Timberwolves"
   },
   {
     "team": "NOP",
     "win": 48,
     "lose": 34,
-    "salary": 111916958
+    "salary": 111916958,
+    "team_fullname": "New Orleans Pelicans"
   },
   {
     "team": "NYK",
     "win": 29,
     "lose": 53,
-    "salary": 104868489
+    "salary": 104868489,
+    "team_fullname": "New York Knicks"
   },
   {
     "team": "OKC",
     "win": 48,
     "lose": 34,
-    "salary": 131851601
+    "salary": 131851601,
+    "team_fullname": "Oklahoma City Thunder"
   },
   {
     "team": "ORL",
     "win": 25,
     "lose": 57,
-    "salary": 96592620
+    "salary": 96592620,
+    "team_fullname": "Orlando Magic"
   },
   {
     "team": "PHI",
     "win": 52,
     "lose": 30,
-    "salary": 99294278
+    "salary": 99294278,
+    "team_fullname": "Philadelphia Sixers"
   },
   {
     "team": "PHO",
     "win": 21,
     "lose": 61,
-    "salary": 80699583
+    "salary": 80699583,
+    "team_fullname": "Phoenix Suns"
   },
   {
     "team": "POR",
     "win": 49,
     "lose": 33,
-    "salary": 113824055
+    "salary": 113824055,
+    "team_fullname": "Portland Blazers"
   },
   {
     "team": "SAS",
     "win": 47,
     "lose": 35,
-    "salary": 113237104
+    "salary": 113237104,
+    "team_fullname": "San Antonio Spurs"
   },
   {
     "team": "SAC",
     "win": 27,
     "lose": 55,
-    "salary": 67775287
+    "salary": 67775287,
+    "team_fullname": "Sacramento Kings"
   },
   {
     "team": "TOR",
     "win": 59,
     "lose": 23,
-    "salary": 115428796
+    "salary": 115428796,
+    "team_fullname": "Toronto Raptors"
   },
   {
     "team": "UTA",
     "win": 48,
     "lose": 34,
-    "salary": 103935448
+    "salary": 103935448,
+    "team_fullname": "Utah Jazz"
   },
   {
     "team": "WAS",
     "win": 43,
     "lose": 39,
-    "salary": 123108940
+    "salary": 123108940,
+    "team_fullname": "Washington Wizards"
   }
 ]

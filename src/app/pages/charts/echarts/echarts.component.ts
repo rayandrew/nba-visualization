@@ -16,6 +16,8 @@ export class EchartsComponent implements OnInit {
   // teamNames: Observable<string[]>;
   teamDetails: Observable<TeamDetail>;
 
+  teamFullname: Observable<string[]>;
+
   playersChartData: Observable<PlayerChartData>;
 
   constructor(private teamService: TeamService, private playerService: PlayerService) {}
@@ -23,6 +25,7 @@ export class EchartsComponent implements OnInit {
   ngOnInit() {
     // this.teamNames = this.teamService.getTeamNames();
     this.teamDetails = this.teamService.getGroupedTeamData();
+    this.teamFullname = this.teamService.getTeamFullNames();
     this.playersChartData = this.playerService.getPlayerChartData();
   }
 }

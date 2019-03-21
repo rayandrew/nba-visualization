@@ -98,6 +98,12 @@ $nb-themes: nb-register-theme((
 
 $nb-themes: nb-register-theme((
   // app wise variables for each theme
+  color-bg: #463a43,
+  layout-bg: #322a30,
+  color-fg-text: #faf7f2,
+
+  shadow: #241f23,
+
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,
   layout-content-width: 1400px,
@@ -105,23 +111,59 @@ $nb-themes: nb-register-theme((
   font-main: Roboto,
   font-secondary: Exo,
 
-  switcher-background: #fdfffc,
+  switcher-background: #685463,
   switcher-background-percentage: 14%,
-  drops-icon-line-gadient: -webkit-linear-gradient(#235789, #273085),
+  // drops-icon-line-gadient: -webkit-linear-gradient(#a258fe, #7958fa),
 
   list-item-border-width: 1px,
 
   slide-out-container-width: 30%,
-  slide-out-background: 	linear-gradient(270deg, #f7fafb 0%, #ecf2f5 100%),
-  slide-out-shadow-color: 0 4px 14px 0 #a2d2c8,
-  slide-out-shadow-color-rtl: 0 4px 14px 0 #a2d2c8,
+  // slide-out-background: radial-gradient(circle, #302c6e 0%, #423f8c 100%),
+  // slide-out-shadow-color: 2px 0 3px rgba(19, 19, 94, 0.9),
+  // slide-out-shadow-color-rtl: -2px 0 3px rgba(19, 19, 94, 0.9),
 
-  chart-panel-summary-box-shadow: none,
-  chart-panel-summary-background-color: #f7fafb,
-  chart-panel-summary-border-color: #ebeff1,
-  chart-panel-summary-border-width: 1px,
+  // chart-panel-summary-box-shadow: none,
+  // chart-panel-summary-background-color: rgba(0, 0, 0, 0.1),
+  // chart-panel-summary-border-color: #322a30,
+  // chart-panel-summary-border-width: 1px,
 
   ecommerce-card-border-width: 1px,
 
-  progress-bar-background: linear-gradient(90deg, #235789 0%, #273085 100%),
-), nba, default);
+  // progress-bar-background: linear-gradient(90deg, #00c7c7 0%, #00d977 100%),
+), nba, cosmic);
+
+// $nb-themes: nb-register-theme((
+//   // app wise variables for each theme
+//   color-bg: #463a43,
+//   layout-bg: #322a30,
+//   color-fg-text: #faf7f2,
+
+//   menu-submenu-hover-fg: #ffffff,
+
+//   sidebar-header-gap: 2rem,
+//   sidebar-header-height: initial,
+//   layout-content-width: 1400px,
+
+//   font-main: Roboto,
+//   font-secondary: Exo,
+
+//   switcher-background: #fdfffc,
+//   switcher-background-percentage: 14%,
+//   drops-icon-line-gadient: -webkit-linear-gradient(#235789, #273085),
+
+//   list-item-border-width: 1px,
+
+//   slide-out-container-width: 30%,
+//   slide-out-background: 	linear-gradient(270deg, #f7fafb 0%, #ecf2f5 100%),
+//   slide-out-shadow-color: 0 4px 14px 0 #a2d2c8,
+//   slide-out-shadow-color-rtl: 0 4px 14px 0 #a2d2c8,
+
+//   chart-panel-summary-box-shadow: none,
+//   chart-panel-summary-background-color: #f7fafb,
+//   chart-panel-summary-border-color: #ebeff1,
+//   chart-panel-summary-border-width: 1px,
+
+//   ecommerce-card-border-width: 1px,
+
+//   progress-bar-background: linear-gradient(90deg, #235789 0%, #273085 100%),
+// ), nba, default);

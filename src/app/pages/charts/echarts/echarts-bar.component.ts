@@ -39,8 +39,11 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             type: 'shadow',
           },
         },
+        legend: {
+          data: ['Win', 'Salary']
+        },
         grid: {
-          top: '2%',
+          top: '4%',
           containLabel: true,
         },
         xAxis: [
@@ -103,11 +106,23 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           {
             name: 'Win',
             type: 'bar',
+            stack: 'team',
             data: teamWins,
             barCategoryGap: '50%',
             barWidth: 25,
             // barCategoryGap: '50%',
             // barGap: '100%'
+          },
+          {
+            name: 'Salary',
+            type: 'bar',
+            stack: 'team',
+            data: [-15, -16, -27],
+            barCategoryGap: '50%',
+            barWidth: 25,
+            itemStyle: {
+              color: '#ffa530'
+            }
           },
         ],
       };

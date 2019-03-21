@@ -56,6 +56,8 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           {
             name: 'PER',
             type: 'value',
+            min: 0,
+            max: 35,
             axisLine: {
               onZero: true,
               lineStyle: {
@@ -75,6 +77,8 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           {
             name: 'Salary',
             type: 'value',
+            min: 0,
+            max: 35000000,
             axisLine: {
               lineStyle: {
                 color: echarts.axisLineColor,
