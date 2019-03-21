@@ -26,7 +26,7 @@ export class TeamService extends TeamData {
   private getTeamPicture(): Observable<object> {
     return observableOf(this.teamData.reduce((acc, { team }) => {
       acc[team] = {
-        height: 40,
+        height: 30,
         align: 'center',
         backgroundColor: {
           image: `assets/images/teams/${team}.gif`,

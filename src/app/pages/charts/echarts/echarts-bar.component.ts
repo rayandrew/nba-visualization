@@ -8,6 +8,7 @@ import { TeamDetail } from '../../../@core/data/team';
   template: `
     <div echarts
          [options]="options"
+         style="height: 1500px"
     >
     </div>
   `,
@@ -39,13 +40,12 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           },
         },
         grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
+          top: '2%',
           containLabel: true,
         },
         xAxis: [
           {
+            name: 'Win',
             type: 'value',
             boundaryGap: [0, 0.1],
             axisTick: {
@@ -88,7 +88,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
               },
               rich: {
                 value: {
-                  lineHeight: 30,
+                  // lineHeight:,
                   align: 'center',
                 },
                 ...teamPics,
@@ -105,6 +105,9 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             type: 'bar',
             data: teamWins,
             barCategoryGap: '50%',
+            barWidth: 25,
+            // barCategoryGap: '50%',
+            // barGap: '100%'
           },
         ],
       };
