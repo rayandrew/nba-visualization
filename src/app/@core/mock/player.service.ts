@@ -13,7 +13,7 @@ export class PlayerService extends PlayerData {
   getPlayerChartData(): Observable<PlayerChartData> {
 
     const scatterData = this.listPlayers.reduce((acc, { team, player, salary, per }) => {
-      if (per >= 0 && per <= 35 && salary >= 0 && salary <= 35000000) {
+      if (per >= 0 && per <= 35 && salary >= 0 && salary <= 35000000 && player !== 'Nikola Jokic') {
         if (acc[team]) {
           acc[team].push([per, salary, player]);
         } else {

@@ -40,7 +40,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           },
         },
         legend: {
-          data: ['Win', 'Salary']
+          data: ['Win', 'Salary'],
         },
         grid: {
           top: '4%',
@@ -121,8 +121,8 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             barCategoryGap: '50%',
             barWidth: 25,
             itemStyle: {
-              color: '#ffa530'
-            }
+              color: '#ffa530',
+            },
           },
         ],
       };

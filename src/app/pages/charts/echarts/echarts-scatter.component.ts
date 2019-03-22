@@ -16,6 +16,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
   themeSubscription: any;
 
   @Input() playerChartData: PlayerChartRequiredData[];
+  @Input() team: string;
 
   constructor(private theme: NbThemeService) {
   }
@@ -26,6 +27,27 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
       const colors = config.variables;
       const echarts: any = config.variables.echarts;
 
+      var seriesData: any = [{
+        symbolSize: 10,
+        data: this.playerChartData,
+        type: 'scatter',
+      }]
+
+      if (this.team === 'DEN') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [24.4, 1471382, 'Nikola Jokic'],
+              itemStyle: {
+                color: '#f4e842'
+              }
+            }
+          ],
+          type: 'scatter',
+        })
+      }
+
       this.options = {
         backgroundColor: echarts.bg,
         color: [colors.primaryLight],
@@ -33,8 +55,14 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           trigger: 'item',
           axisPointer: {
             type: 'shadow',
-        },
+          },
           formatter: function({ data, color }) {
+            let value: any
+            if ('value' in data)
+              value = data.value
+            else
+              value = data
+
             const currency = new Intl.NumberFormat('en-US', {
               style: 'currency',
               currency: 'USD',
@@ -45,9 +73,9 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
               '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'
               + bgColor
               + '"></span>';
-            const rez = '<p style="margin-bottom: 5px">' + data[2] + '</p>' +
-              '<span>' + colorSpan(color) + ' PER : ' + data[0] + '</span><br>' +
-              '<span>' + colorSpan(color) + ' Salary : ' + currency.format(data[1]) + '</span>';
+            const rez = '<p style="margin-bottom: 5px">' + value[2] + '</p>' +
+              '<span>' + colorSpan(color) + ' PER : ' + value[0] + '</span><br>' +
+              '<span>' + colorSpan(color) + ' Salary : ' + currency.format(value[1]) + '</span>';
 
             return rez;
           },
@@ -104,11 +132,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           bottom: 0,
           containLabel: true,
         },
-        series: [{
-          symbolSize: 10,
-          data: this.playerChartData,
-          type: 'scatter',
-        }],
+        series: seriesData,
       };
     });
   }

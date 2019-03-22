@@ -47,7 +47,7 @@ $nb-themes: nb-register-theme((
 
   switcher-background: #4e41a5,
   switcher-background-percentage: 14%,
-  drops-icon-line-gadient: -webkit-linear-gradient(#a258fe, #7958fa),
+  // drops-icon-line-gadient: -webkit-linear-gradient(#a258fe, #7958fa),
 
   list-item-border-width: 1px,
 
@@ -101,6 +101,7 @@ $nb-themes: nb-register-theme((
   color-bg: #463a43,
   layout-bg: #322a30,
   color-fg-text: #faf7f2,
+  card-header-border-color: #322a30,
 
   shadow: #241f23,
 
