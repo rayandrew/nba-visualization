@@ -98,12 +98,12 @@ $nb-themes: nb-register-theme((
 
 $nb-themes: nb-register-theme((
   // app wise variables for each theme
-  color-bg: #2D3035,
-  layout-bg: #22252A,
-  color-fg-text: #FAF7f2,
-  card-header-border-color: #080F0F,
+  color-bg: #2d3035,
+  layout-bg: #22252a,
+  color-fg-text: #faf7f2,
+  card-header-border-color: #080f0f,
 
-  shadow: #241F23,
+  shadow: #241f23,
 
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,
@@ -112,9 +112,9 @@ $nb-themes: nb-register-theme((
   font-main: Roboto,
   font-secondary: Exo,
 
-  switcher-background: #22252A,
+  switcher-background: #22252a,
   switcher-background-percentage: 14%,
-  drops-icon-line-gadient: -webkit-linear-gradient(#2D3035, #22252A),
+  drops-icon-line-gadient: -webkit-linear-gradient(#2d3035, #22252a),
 
   list-item-border-width: 1px,
 
