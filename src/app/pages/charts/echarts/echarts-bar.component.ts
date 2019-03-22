@@ -30,7 +30,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
       const colors: any = config.variables;
       const echarts: any = config.variables.echarts;
 
-      const teamSalaryMin = teamSalary.map(function(x) { return x * 90 / 150000000 * -1; });
+      const standardizeTeamSalary = teamSalary.map(function(x) { return x * 90 / 150000000 * -1; });
 
       this.options = {
         backgroundColor: echarts.bg,
@@ -154,7 +154,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             name: 'Salary',
             type: 'bar',
             stack: 'team',
-            data: teamSalaryMin,
+            data: standardizeTeamSalary,
             barCategoryGap: '50%',
             barWidth: 25,
             itemStyle: {
