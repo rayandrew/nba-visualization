@@ -25,10 +25,12 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
-      const [teamNames, teamPics, teamWins] = this.teamDetail;
+      const [teamNames, teamPics, teamWins, teamLose, teamSalary] = this.teamDetail;
 
       const colors: any = config.variables;
       const echarts: any = config.variables.echarts;
+
+      const teamSalaryMin = teamSalary.map(function(x) { return x * 90 / 150000000 * -1; });
 
       this.options = {
         backgroundColor: echarts.bg,
@@ -37,6 +39,29 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           trigger: 'axis',
           axisPointer: {
             type: 'shadow',
+          },
+          formatter: function(params) {
+            const team = params[0].name;
+            const win = params[0].data;
+            const salary = params[1].data * 150000000 / 90 * -1;
+            const colorWin = params[0].color;
+            const colorSalary = params[1].color;
+
+            const currency = new Intl.NumberFormat('en-US', {
+              style: 'currency',
+              currency: 'USD',
+            });
+
+            const colorSpan =
+              bgColor =>
+              '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'
+              + bgColor
+              + '"></span>';
+            const rez = '<p style="margin-bottom: 5px">' + team + '</p>' +
+              '<span>' + colorSpan(colorWin) + ' PER : ' + win + '</span><br>' +
+              '<span>' + colorSpan(colorSalary) + ' Salary : ' + currency.format(salary) + '</span>';
+
+            return rez;
           },
         },
         legend: {
@@ -68,6 +93,18 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
               interval: 0,
               textStyle: {
                 color: echarts.textColor,
+              },
+              formatter: function(label) {
+                const currency = new Intl.NumberFormat('en-US', {
+                  style: 'currency',
+                  currency: 'USD',
+                });
+
+                if (label < 0) {
+                  return currency.format(label * 150000000 / 90 * -1).substr(1);
+                } else {
+                  return label;
+                }
               },
             },
           },
@@ -117,7 +154,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             name: 'Salary',
             type: 'bar',
             stack: 'team',
-            data: [-15, -16, -27],
+            data: teamSalaryMin,
             barCategoryGap: '50%',
             barWidth: 25,
             itemStyle: {
