@@ -26,12 +26,11 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
 
       const colors = config.variables;
       const echarts: any = config.variables.echarts;
-
-      var seriesData: any = [{
+      const seriesData: any = [{
         symbolSize: 10,
         data: this.playerChartData,
         type: 'scatter',
-      }]
+      }];
 
       if (this.team === 'DEN') {
         seriesData.push({
@@ -40,12 +39,12 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             {
               value: [24.4, 1471382, 'Nikola Jokic'],
               itemStyle: {
-                color: '#f4e842'
-              }
-            }
+                color: '#f4e842',
+              },
+            },
           ],
           type: 'scatter',
-        })
+        });
       }
 
       this.options = {
@@ -57,11 +56,11 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             type: 'shadow',
           },
           formatter: function({ data, color }) {
-            let value: any
+            let value: any;
             if ('value' in data)
-              value = data.value
+              value = data.value;
             else
-              value = data
+              value = data;
 
             const currency = new Intl.NumberFormat('en-US', {
               style: 'currency',
