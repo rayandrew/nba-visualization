@@ -27,14 +27,12 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
       const [teamNames, teamPics, teamWins, teamLose, teamSalary] = this.teamDetail;
 
-      const colors: any = config.variables;
       const echarts: any = config.variables.echarts;
-
       const standardizeTeamSalary = teamSalary.map(function(x) { return x * 90 / 150000000 * -1; });
 
       this.options = {
         backgroundColor: echarts.bg,
-        color: [colors.primaryLight],
+        color: '#1344a0',
         tooltip: {
           trigger: 'axis',
           axisPointer: {
@@ -147,6 +145,15 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             data: teamWins,
             barCategoryGap: '50%',
             barWidth: 25,
+            itemStyle: {
+              color: function({name}) {
+                if (name === 'HOU') {
+                  return '#2b60c6'
+                } else {
+                  return '#1b3972'
+                }
+              }
+            },
             // barCategoryGap: '50%',
             // barGap: '100%'
           },
@@ -158,7 +165,13 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             barCategoryGap: '50%',
             barWidth: 25,
             itemStyle: {
-              color: '#ffa530',
+              color: function({name}) {
+                if (name === 'CLE') {
+                  return '#c12841'
+                } else {
+                  return '#871b2c'
+                }
+              }
             },
           },
         ],

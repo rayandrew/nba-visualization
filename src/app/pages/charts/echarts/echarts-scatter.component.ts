@@ -24,7 +24,6 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
 
-      const colors = config.variables;
       const echarts: any = config.variables.echarts;
       const seriesData: any = [{
         symbolSize: 10,
@@ -39,7 +38,97 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             {
               value: [24.4, 1471382, 'Nikola Jokic'],
               itemStyle: {
-                color: '#f4e842',
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
+      if (this.team === 'GSW') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [28.2, 34682550, 'Stephen Curry'],
+              itemStyle: {
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
+      if (this.team === 'HOU') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [30.2, 28299399, 'James Harden'],
+              itemStyle: {
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
+      if (this.team === 'CLE') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [28.5, 33285709, 'LeBron James'],
+              itemStyle: {
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
+      if (this.team === 'BOS') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [25.1, 18868625, 'Kyrie Irving'],
+              itemStyle: {
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
+      if (this.team === 'MIL') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [27.7, 22471910, 'Giannis Antetokounmpo'],
+              itemStyle: {
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
+      if (this.team === 'NOP') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [28.9, 23775506, 'Anthony Davis'],
+              itemStyle: {
+                color: '#20b0e5',
               },
             },
           ],
@@ -49,7 +138,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
 
       this.options = {
         backgroundColor: echarts.bg,
-        color: [colors.primaryLight],
+        color: '#11419b',
         tooltip: {
           trigger: 'item',
           axisPointer: {
@@ -91,7 +180,13 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             axisLine: {
               onZero: true,
               lineStyle: {
-                color: echarts.axisLineColor,
+                color: '#ebeff1',
+              },
+            },
+            splitLine: {
+              lineStyle: {
+                color: '#ebeff1',
+                opacity: 0.3
               },
             },
             axisLabel: {
@@ -114,12 +209,13 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             },
             axisLine: {
               lineStyle: {
-                color: echarts.axisLineColor,
+                color: '#ebeff1',
               },
             },
             splitLine: {
               lineStyle: {
-                color: 'echarts.splitLineColor',
+                color: '#ebeff1',
+                opacity: 0.3
               },
             },
             axisLabel: {
