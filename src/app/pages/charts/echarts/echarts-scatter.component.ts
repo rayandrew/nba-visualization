@@ -55,12 +55,8 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           axisPointer: {
             type: 'shadow',
           },
-          formatter: function({ data, color }) {
-            let value: any;
-            if ('value' in data)
-              value = data.value;
-            else
-              value = data;
+          formatter: ({ data, color }) => {
+            const value: any = 'value' in data ? data.value : data;
 
             const currency = new Intl.NumberFormat('en-US', {
               style: 'currency',

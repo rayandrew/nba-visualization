@@ -30,7 +30,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
       const colors: any = config.variables;
       const echarts: any = config.variables.echarts;
 
-      const standardizeTeamSalary = teamSalary.map(function(x) { return x * 90 / 150000000 * -1; });
+      const standardizeTeamSalary = teamSalary.map(x => x * 90 / 150000000 * -1);
 
       this.options = {
         backgroundColor: echarts.bg,
@@ -66,6 +66,10 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
         },
         legend: {
           data: ['Win', 'Salary'],
+          backgroundColor: '#2d3035',
+          textStyle: {
+            color: echarts.textColor,
+          },
         },
         grid: {
           top: '4%',
@@ -94,7 +98,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
               textStyle: {
                 color: echarts.textColor,
               },
-              formatter: function(label) {
+              formatter: label => {
                 const currency = new Intl.NumberFormat('en-US', {
                   style: 'currency',
                   currency: 'USD',
@@ -123,12 +127,9 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             },
             axisLabel: {
               interval: 0,
-              formatter: function (value) {
-                return '{' + value + '| }\n{value|' + value + '}';
-              },
+              formatter: value => '{' + value + '| }\n{value|' + value + '}',
               rich: {
                 value: {
-                  // lineHeight:,
                   align: 'center',
                 },
                 ...teamPics,
@@ -147,8 +148,6 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             data: teamWins,
             barCategoryGap: '50%',
             barWidth: 25,
-            // barCategoryGap: '50%',
-            // barGap: '100%'
           },
           {
             name: 'Salary',

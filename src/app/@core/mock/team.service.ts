@@ -50,6 +50,12 @@ export class TeamService extends TeamData {
   }
 
   getGroupedTeamData(): Observable<TeamDetail> {
+    // return observableOf(this.teamData.reduce((acc, curr, index) => {
+    //   const [teamNames, teamPics, teamWins, teamLoses, teamSalaries] = acc;
+    //   const { team, team_fullname } =
+    //   teamNames.push()
+    // } , [[], [], [], []]));
+
     return forkJoin(
       this.getTeamNames(),
       this.getTeamPicture(),

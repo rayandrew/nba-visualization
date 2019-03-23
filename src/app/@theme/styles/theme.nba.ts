@@ -8,7 +8,7 @@ export const NBA_THEME = {
       axisLineColor: '#2D3035',
       splitLineColor: '#2D3035',
       itemHoverShadowColor: 'rgba(0, 0, 0, 0.5)',
-      tooltipBackgroundColor: '#6a7985',
+      tooltipBackgroundColor: '#faf7f2',
       areaOpacity: '1',
     },
   },
