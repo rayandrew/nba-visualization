@@ -25,7 +25,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
-      const [teamNames, teamPics, teamWins, teamLose, teamSalary] = this.teamDetail;
+      const [teamNames, teamPics, teamWins, _, teamSalary] = this.teamDetail;
 
       const colors: any = config.variables;
       const echarts: any = config.variables.echarts;
