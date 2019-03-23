@@ -150,11 +150,11 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             itemStyle: {
               color: function({name}) {
                 if (name === 'HOU') {
-                  return '#2b60c6'
+                  return '#2b60c6';
                 } else {
-                  return '#1b3972'
+                  return '#1b3972';
                 }
-              }
+              },
             },
             // barCategoryGap: '50%',
             // barGap: '100%'
@@ -169,11 +169,11 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             itemStyle: {
               color: function({name}) {
                 if (name === 'CLE') {
-                  return '#c12841'
+                  return '#c12841';
                 } else {
-                  return '#871b2c'
+                  return '#871b2c';
                 }
-              }
+              },
             },
           },
         ],

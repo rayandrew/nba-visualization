@@ -197,7 +197,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             splitLine: {
               lineStyle: {
                 color: '#ebeff1',
-                opacity: 0.3
+                opacity: 0.3,
               },
             },
             axisLabel: {
@@ -226,7 +226,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             splitLine: {
               lineStyle: {
                 color: '#ebeff1',
-                opacity: 0.3
+                opacity: 0.3,
               },
             },
             axisLabel: {
