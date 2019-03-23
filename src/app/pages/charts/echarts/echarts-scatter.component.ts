@@ -136,6 +136,21 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
         });
       }
 
+      if (this.team === 'OKC') {
+        seriesData.push({
+          symbolSize: 20,
+          data: [
+            {
+              value: [25, 28530608, 'Russell Westbrook'],
+              itemStyle: {
+                color: '#20b0e5',
+              },
+            },
+          ],
+          type: 'scatter',
+        });
+      }
+
       this.options = {
         backgroundColor: echarts.bg,
         color: '#11419b',
@@ -144,12 +159,8 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           axisPointer: {
             type: 'shadow',
           },
-          formatter: function({ data, color }) {
-            let value: any;
-            if ('value' in data)
-              value = data.value;
-            else
-              value = data;
+          formatter: ({ data, color }) => {
+            const value: any = 'value' in data ? data.value : data;
 
             const currency = new Intl.NumberFormat('en-US', {
               style: 'currency',
