@@ -81,6 +81,9 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             type: 'value',
             min: 0,
             max: 35,
+            nameTextStyle: {
+              color: '#ebeff1',
+            },
             axisLine: {
               onZero: true,
               lineStyle: {
@@ -102,6 +105,9 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             type: 'value',
             min: 0,
             max: 35000000,
+            nameTextStyle: {
+              color: '#ebeff1',
+            },
             axisLine: {
               lineStyle: {
                 color: echarts.axisLineColor,
@@ -109,7 +115,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
             },
             splitLine: {
               lineStyle: {
-                color: echarts.splitLineColor,
+                color: 'echarts.splitLineColor',
               },
             },
             axisLabel: {
