@@ -8,7 +8,7 @@ import { TeamDetail } from '../../../@core/data/team';
   template: `
     <div echarts
          [options]="options"
-         style="height: 1500px"
+         style="height: 1700px"
     >
     </div>
   `,
@@ -25,7 +25,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
-      const [teamNames, teamPics, teamWins, , teamSalary] = this.teamDetail;
+      const [teamNames, teamFullNames, teamPics, teamWins, , teamSalary] = this.teamDetail;
 
       const echarts: any = config.variables.echarts;
 
@@ -39,9 +39,9 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           axisPointer: {
             type: 'shadow',
           },
-          formatter: function(params) {
+          formatter: params => {
             const team = params[0].name;
-            const win = params[0].data;
+            const win = params[0].data.value;
             const salary = params[1].data * 150000000 / 90 * -1;
             const colorWin = params[0].color;
             const colorSalary = params[1].color;
@@ -57,7 +57,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
               + bgColor
               + '"></span>';
             const rez = '<p style="margin-bottom: 5px">' + team + '</p>' +
-              '<span>' + colorSpan(colorWin) + ' PER : ' + win + '</span><br>' +
+              '<span>' + colorSpan(colorWin) + ' WIN : ' + win + '</span><br>' +
               '<span>' + colorSpan(colorSalary) + ' Salary : ' + currency.format(salary) + '</span>';
 
             return rez;
@@ -66,9 +66,11 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
         legend: {
           data: ['Win', 'Salary'],
           backgroundColor: '#2d3035',
+          top: 20,
           textStyle: {
             color: echarts.textColor,
           },
+          selectedMode: false,
         },
         grid: {
           top: '4%',
@@ -89,6 +91,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             },
             splitLine: {
               lineStyle: {
+                type: 'dashed',
                 color: echarts.splitLineColor,
               },
             },
@@ -125,17 +128,24 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
               },
             },
             axisLabel: {
+              show: false,
               interval: 0,
-              formatter: value => '{' + value + '| }\n{value|' + value + '}',
-              rich: {
-                value: {
-                  align: 'center',
-                },
-                ...teamPics,
-              },
-              textStyle: {
-                color: echarts.textColor,
-              },
+            },
+          },
+        ],
+        graphic: [
+          {
+            type: 'image',
+            id: 'logo',
+            right: 30,
+            top: 20,
+            z: -10,
+            bounding: 'raw',
+            style: {
+              image: 'assets/images/nba-two.png',
+              width: 75,
+              height: 150,
+              opacity: 0.4,
             },
           },
         ],
@@ -144,11 +154,33 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             name: 'Win',
             type: 'bar',
             stack: 'team',
-            data: teamWins,
+            z: 2,
+            label: {
+              normal: {
+                show: true,
+                position: 'insideRight',
+                formatter: (value) => `{value|${teamFullNames[value.name]}} {${value.name}|}`,
+                rich: {
+                  value: {
+                    align: 'center',
+                    color: echarts.textColor,
+                  },
+                  ...teamPics,
+                },
+              },
+            },
+            data: teamWins.map(value => ({
+              value,
+              label: {
+                normal: {
+                  position: 'left',
+                },
+              },
+            })),
             barCategoryGap: '50%',
-            barWidth: 25,
+            barWidth: 45,
             itemStyle: {
-              color: function({name}) {
+              color: ({ name }) => {
                 if (name === 'HOU') {
                   return '#2b60c6';
                 } else {
@@ -156,18 +188,17 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
                 }
               },
             },
-            // barCategoryGap: '50%',
-            // barGap: '100%'
           },
           {
             name: 'Salary',
             type: 'bar',
             stack: 'team',
+            z: 1,
             data: standardizeTeamSalary,
             barCategoryGap: '50%',
-            barWidth: 25,
+            barWidth: 45,
             itemStyle: {
-              color: function({name}) {
+              color: ({ name }) => {
                 if (name === 'CLE') {
                   return '#c12841';
                 } else {

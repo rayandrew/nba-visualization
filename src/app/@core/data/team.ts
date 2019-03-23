@@ -8,7 +8,7 @@ export interface Team {
   team_fullname: string;
 }
 
-export type TeamDetail = [string[], object, number[], number[], number[]];
+export type TeamDetail = [string[], object, object, number[], number[], number[]];
 
 export abstract class TeamData {
   abstract getTeamData(): Observable<Team[]>;
