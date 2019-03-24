@@ -63,15 +63,15 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             return rez;
           },
         },
-        legend: {
-          data: ['Win', 'Salary'],
-          backgroundColor: '#2d3035',
-          top: 20,
-          textStyle: {
-            color: echarts.textColor,
-          },
-          selectedMode: false,
-        },
+        // legend: {
+        //   data: ['Win', 'Salary'],
+        //   backgroundColor: '#2d3035',
+        //   top: 20,
+        //   textStyle: {
+        //     color: echarts.textColor,
+        //   },
+        //   selectedMode: false,
+        // },
         grid: {
           top: '4%',
           containLabel: true,
@@ -133,22 +133,22 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             },
           },
         ],
-        graphic: [
-          {
-            type: 'image',
-            id: 'logo',
-            right: 30,
-            top: 20,
-            z: -10,
-            bounding: 'raw',
-            style: {
-              image: 'assets/images/nba-two.png',
-              width: 75,
-              height: 150,
-              opacity: 0.4,
-            },
-          },
-        ],
+        // graphic: [
+        //   {
+        //     type: 'image',
+        //     id: 'logo',
+        //     right: 30,
+        //     top: 20,
+        //     z: -10,
+        //     bounding: 'raw',
+        //     style: {
+        //       image: 'assets/images/nba-two.png',
+        //       width: 75,
+        //       height: 150,
+        //       opacity: 0.4,
+        //     },
+        //   },
+        // ],
         series: [
           {
             name: 'Win',
@@ -182,9 +182,11 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             itemStyle: {
               color: ({ name }) => {
                 if (name === 'HOU') {
-                  return '#2b60c6';
+                  // return '#2b60c6';
+                  return '#c12841';
                 } else {
-                  return '#1b3972';
+                  return '#871b2c';
+                  // return '#1b3972';
                 }
               },
             },
@@ -200,9 +202,11 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             itemStyle: {
               color: ({ name }) => {
                 if (name === 'CLE') {
-                  return '#c12841';
+                  // return '#c12841';
+                  return '#2b60c6';
                 } else {
-                  return '#871b2c';
+                  return '#1b3972';
+                  // return '#871b2c';
                 }
               },
             },
