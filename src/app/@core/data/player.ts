@@ -21,4 +21,5 @@ export interface PlayerChartData {
 export abstract class PlayerData {
   abstract getPlayerChartData(): Observable<PlayerChartData>;
   abstract getAllPlayers(): Observable<Player[]>;
+  abstract getData(): any[];
 }

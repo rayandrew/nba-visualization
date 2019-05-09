@@ -12,11 +12,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Team',
-        link: '/pages/tables/smart-table',
+        link: '/pages/tables/team-table',
       },
       {
         title: 'Player',
-        link: '/pages/tables/smart-table',
+        link: '/pages/tables/player-table',
       },
     ],
   },

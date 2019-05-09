@@ -8,7 +8,7 @@ import * as Players from '../players.json';
 @Injectable()
 export class PlayerService extends PlayerData {
 
-  private listPlayers: Player[] = (<any> Players).default;
+  private listPlayers: Player[] = (<any>Players).default;
 
   getPlayerChartData(): Observable<PlayerChartData> {
 
@@ -29,5 +29,9 @@ export class PlayerService extends PlayerData {
 
   getAllPlayers(): Observable<Player[]> {
     return observableOf(this.listPlayers);
+  }
+
+  getData(): any[] {
+    return this.listPlayers;
   }
 }
