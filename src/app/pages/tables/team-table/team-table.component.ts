@@ -1,20 +1,25 @@
 import { Component } from '@angular/core';
 import { LocalDataSource } from 'ng2-smart-table';
 
-import { SmartTableData } from '../../../@core/data/smart-table';
+import { TeamData } from '../../../@core/data/team';
 
 @Component({
-  selector: 'ngx-smart-table',
-  templateUrl: './smart-table.component.html',
+  selector: 'ngx-team-table',
+  templateUrl: './team-table.component.html',
   styles: [`
     nb-card {
       transform: translate3d(0, 0, 0);
     }
   `],
 })
-export class SmartTableComponent {
+export class TeamTableComponent {
 
   settings = {
+    actions: {
+      add: false,
+      edit: false,
+      delete: false,
+    },
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
       createButtonContent: '<i class="nb-checkmark"></i>',
@@ -30,36 +35,24 @@ export class SmartTableComponent {
       confirmDelete: true,
     },
     columns: {
-      id: {
-        title: 'ID',
+      team: {
+        title: 'Team',
+        type: 'string',
+      },
+      win: {
+        title: 'Win',
         type: 'number',
       },
-      firstName: {
-        title: 'First Name',
+      ['team_fullname']: {
+        title: 'Team Name',
         type: 'string',
-      },
-      lastName: {
-        title: 'Last Name',
-        type: 'string',
-      },
-      username: {
-        title: 'Username',
-        type: 'string',
-      },
-      email: {
-        title: 'E-mail',
-        type: 'string',
-      },
-      age: {
-        title: 'Age',
-        type: 'number',
       },
     },
   };
 
   source: LocalDataSource = new LocalDataSource();
 
-  constructor(private service: SmartTableData) {
+  constructor(private service: TeamData) {
     const data = this.service.getData();
     this.source.load(data);
   }

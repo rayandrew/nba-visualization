@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { of as observableOf,  Observable } from 'rxjs';
+import { of as observableOf, Observable } from 'rxjs';
 import { Team, TeamData, TeamDetail } from '../data/team';
 
 import * as TeamDataset from '../team_dataset.json';
@@ -7,7 +7,7 @@ import * as TeamDataset from '../team_dataset.json';
 @Injectable()
 export class TeamService extends TeamData {
 
-  private teamData: Team[] = ((<any> TeamDataset).default)
+  private teamData: Team[] = ((<any>TeamDataset).default)
     .slice()
     .sort((a, b) => a.win - b.win);
 
@@ -43,6 +43,10 @@ export class TeamService extends TeamData {
       teamSalaries.push(salary);
 
       return [teamNames, teamFullNames, teamPics, teamWins, teamLoses, teamSalaries];
-    }, (<any> [[], {}, {}, [], [], []])));
+    }, (<any>[[], {}, {}, [], [], []])));
+  }
+
+  getData(): any[] {
+    return this.teamData;
   }
 }

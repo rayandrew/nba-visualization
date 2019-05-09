@@ -15,4 +15,5 @@ export abstract class TeamData {
   abstract getTeamNames(): Observable<string[]>;
   abstract getTeamFullNames(): Observable<string[]>;
   abstract getGroupedTeamData(): Observable<TeamDetail>;
+  abstract getData(): any[];
 }
