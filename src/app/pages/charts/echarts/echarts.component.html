@@ -17,19 +17,7 @@
           </nb-card-header>
           <nb-card-body>
             <ng-container *ngIf="playersChartData | async as chartData">
-              <ngx-echarts-scatter [playerChartData]="chartData[team]"></ngx-echarts-scatter>
-            </ng-container>
-          </nb-card-body>
-        </nb-card>
-      </div>
-      <div class="col-lg-4">
-        <nb-card class="scatter-big">
-          <nb-card-header>
-            Denver Nuggets
-          </nb-card-header>
-          <nb-card-body>
-            <ng-container *ngIf="playersChartData | async as chartData">
-              <ngx-echarts-scatter [playerChartData]="chartData['DEN']"></ngx-echarts-scatter>
+              <ngx-echarts-scatter [playerChartData]="chartData[team]" [team]="team"></ngx-echarts-scatter>
             </ng-container>
           </nb-card-body>
         </nb-card>

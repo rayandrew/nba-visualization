@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { EChartOption } from 'echarts';
 import { parse } from 'echarts/extension/dataTool/gexf';
+import { color } from 'd3-color';
 
 @Component({
     selector: 'ngx-echarts-graph',
@@ -30,33 +31,59 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                 map(xml => {
                     const graph = parse(xml);
                     const categories = [];
-                    for (let i = 0; i < 9; i++) {
-                        categories[i] = {
-                            name: 'category' + i,
-                        };
+                    categories[0] = {
+                        name: 'Player',
+                        itemStyle: {
+                            color: '#000da3'
+                        }
+                    }
+                    categories[1] = {
+                        name: 'Team',
+                        itemStyle: {
+                            color: '#d80000'
+                        }
                     }
                     graph.nodes.forEach(function (node) {
                         if (node.attributes[1] != null) {
-                            node.symbolSize = node.attributes[2] / 5000000;
+                            node.symbolSize = node.attributes[2] / 1000000;
                         } else if (node.attributes[3] != null) {
-                            node.symbolSize = node.attributes[2] / 10000000;
+                            node.symbolSize = node.attributes[2] / 1500000;
                         } else {
-                            node.symbolSize = node.attributes[2] / 150000000;
+                            node.symbolSize = node.attributes[2] / 15000000;
                         }
                         node.name = node.attributes[0];
-
+        
                         if (node.name === 'James Harden' || node.name === 'Lebron James' ||
-                            node.name === 'Stephen Curry' || node.name === 'Giannis Antetokounmpo' ||
-                            node.name === 'Anthony Davis' || node.name === 'Russell Westbrook' ||
-                            node.name === 'Kevin Durant' || node.name === 'Kyrie Irving' ||
-                            node.name === 'Nikola Jokic' || node.name === 'Kawhi Leonard') {
+                        node.name === 'Stephen Curry' || node.name === 'Giannis Antetokounmpo' ||
+                        node.name === 'Anthony Davis' || node.name === 'Russell Westbrook' ||
+                        node.name === 'Kevin Durant' || node.name === 'Kyrie Irving' ||
+                        node.name === 'Nikola Jokic' || node.name === 'Kawhi Leonard') {
+                            node.category = 0;
                             node.itemStyle = {
                                 normal: {
-                                    color: '#00a5ff',
-                                },
-                            };
+                                    color: '#00b6ff'
+                                }
+                            }
+                        } else if (node.name === 'ATL' || node.name === 'BRK' || node.name === 'BOS' ||
+                        node.name === 'CHO' || node.name === 'CHI' || node.name === 'CLE' ||
+                        node.name === 'DAL' || node.name === 'DEN' || node.name === 'DET' ||
+                        node.name === 'GSW' || node.name === 'LAL' || node.name === 'MEM' ||
+                        node.name === 'MIA' || node.name === 'MIL' || node.name === 'MIN' ||
+                        node.name === 'NOP' || node.name === 'NYK' || node.name === 'OKC' ||
+                        node.name === 'ORL' || node.name === 'PHI' || node.name === 'PHO' ||
+                        node.name === 'POR' || node.name === 'SAS' || node.name === 'SAC' ||
+                        node.name === 'TOR' || node.name === 'UTA' || node.name === 'WAS' ||
+                        node.name === 'HOU' || node.name === 'IND' || node.name === 'LAC') {
+                            node.category = 1;
+                        } else if (node.name === 'NBA') {
+                            node.itemStyle = {
+                                normal: {
+                                    color: '#a50000'
+                                }
+                            }
+                            node.focusNodeAdjacency = true
                         } else {
-                            node.itemStyle = null;
+                            node.category = 0;
                         }
 
                         node.draggable = true;
@@ -68,51 +95,53 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                         // };
                         // node.category = node.attributes[4];
                     });
-
+                    console.log(graph)
                     return {
-                        title: {
-                            text: 'NBA Vizualization',
-                            subtext: 'Default layout',
-                            top: 'bottom',
-                            left: 'right',
-                        },
                         tooltip: {
-                            // formatter: params => {
-                            //     if (params.dataType === 'node') {
-                            //         let data = params.data.attributes
-                            //         let salary = data[2];
-                            //         let name = params.name;
-                            //         let perfomance;
-                            //         let res;
-
-                            //         let currency = new Intl.NumberFormat('en-US', {
-                            //             style: 'currency',
-                            //             currency: 'USD',
-                            //         });
-
-                            //         if (data[1] != null) {
-                            //             perfomance = data[1];
-                            //             res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
-                            //             '<span>' + params.marker + ' PER : ' + perfomance + '</span><br>' +
-                            //             '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
-                            //         } else {
-                            //             perfomance = data[3];
-                            //             res = '<p style="margin-bottom: 5px">' + name + '</p>' +
-                            //             '<span>' + params.marker + ' Win : ' + perfomance + '</span><br>' +
-                            //             '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
-                            //         }
-
-                            //         return res
-                            //     }
-                            // }
+                            formatter: params => {
+                                if (params.dataType === 'node') {
+                                    let data = params.data.attributes
+                                    let salary = data[2];
+                                    let name = params.name;
+                                    let perfomance;
+                                    let res;
+        
+                                    let currency = new Intl.NumberFormat('en-US', {
+                                        style: 'currency',
+                                        currency: 'USD',
+                                    });
+        
+                                    if (data[1] != null) {
+                                        perfomance = data[1];
+                                        res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
+                                        '<span>' + params.marker + ' PER : ' + perfomance + '</span><br>' +
+                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';                          
+                                    } else if (data[3] != null) {
+                                        perfomance = data[3];
+                                        res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
+                                        '<span>' + params.marker + ' Win : ' + perfomance + '</span><br>' +
+                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';                                
+                                    } else {
+                                        res ="<div class='row' style='margin: 5px'>" +
+                                        "<div class='column'><img src='assets/images/nba-two.png' alt='Image not found' height='72' width='42'></div>" +
+                                        "<div class='column' style='margin: 5px'>" + '<span style="margin-bottom: 5px">' + name + '</span><br>' +
+                                        '<span>' + params.marker + ' Total spent money : ' + currency.format(salary) + '</span></div></div>'; 
+                                    }
+        
+                                    return res
+                                }
+                            }
                         },
-                        // legend: [{
-                        //     // selectedMode: 'single',
-                        //     data: categories.map(function (a) {
-                        //         // console.log(a)
-                        //         return a.name;
-                        //     })
-                        // }],
+                        legend: [{
+                            // selectedMode: 'single',
+                            data: categories.map(function (a) {
+                                // console.log(a)
+                                return a.name;
+                            }),
+                            textStyle: {
+                                color: '#ffffff'
+                            }
+                        }],
                         animationDuration: 1500,
                         animationEasingUpdate: 'quinticInOut',
                         series: [
@@ -122,7 +151,7 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                 layout: 'force',
                                 data: graph.nodes,
                                 links: graph.links,
-                                // categories: categories,
+                                categories: categories,
                                 roam: true,
                                 itemStyle: {
                                     normal: {
@@ -132,11 +161,16 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                         shadowColor: 'rgba(0, 0, 0, 0.3)',
                                     },
                                 },
+                                label: {
+                                    position: 'right',
+                                    formatter: '{b}',
+                                    color: '#ffffff'
+                                },
                                 lineStyle: {
                                     curveness: 0.3,
                                 },
                                 force: {
-                                    repulsion: 25,
+                                    repulsion: 300,
                                 },
                             },
                         ],
