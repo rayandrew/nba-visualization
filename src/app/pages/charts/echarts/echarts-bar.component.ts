@@ -53,9 +53,9 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
 
             const colorSpan =
               bgColor =>
-              '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'
-              + bgColor
-              + '"></span>';
+                '<span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'
+                + bgColor
+                + '"></span>';
             const rez = '<p style="margin-bottom: 5px">' + team + '</p>' +
               '<span>' + colorSpan(colorWin) + ' WIN : ' + win + '</span><br>' +
               '<span>' + colorSpan(colorSalary) + ' Salary : ' + currency.format(salary) + '</span>';
@@ -63,15 +63,15 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             return rez;
           },
         },
-        // legend: {
-        //   data: ['Win', 'Salary'],
-        //   backgroundColor: '#2d3035',
-        //   top: 20,
-        //   textStyle: {
-        //     color: echarts.textColor,
-        //   },
-        //   selectedMode: false,
-        // },
+        legend: {
+          data: ['Win', 'Salary'],
+          backgroundColor: '#2d3035',
+          top: 20,
+          textStyle: {
+            color: echarts.textColor,
+          },
+          selectedMode: false,
+        },
         grid: {
           top: '4%',
           containLabel: true,

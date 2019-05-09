@@ -1,4 +1,5 @@
 <div class="row">
+  <ngx-echarts-graph></ngx-echarts-graph>
   <ng-container *ngIf="teamDetails | async as teams">
     <div class="col-12">
       <nb-card class="bar">
@@ -11,10 +12,8 @@
     <div class="row">
       <div class="col-lg-4" *ngFor="let team of teams[0]; let index = index;">
         <nb-card class="scatter">
-          <nb-card-header
-            class="scatter-header"
-            *ngIf="teamFullname | async as teamFullname">
-              {{ teamFullname[index] }}
+          <nb-card-header class="scatter-header" *ngIf="teamFullname | async as teamFullname">
+            {{ teamFullname[index] }}
           </nb-card-header>
           <nb-card-body>
             <ng-container *ngIf="playersChartData | async as chartData">
@@ -26,7 +25,7 @@
       <div class="col-lg-4">
         <nb-card class="scatter-big">
           <nb-card-header>
-              Denver Nuggets
+            Denver Nuggets
           </nb-card-header>
           <nb-card-body>
             <ng-container *ngIf="playersChartData | async as chartData">
@@ -37,4 +36,4 @@
       </div>
     </div>
   </ng-container>
- </div>
+</div>
