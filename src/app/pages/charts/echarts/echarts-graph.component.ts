@@ -32,7 +32,7 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                     const categories = [];
                     for (let i = 0; i < 9; i++) {
                         categories[i] = {
-                            name: 'category' + i
+                            name: 'category' + i,
                         };
                     }
                     graph.nodes.forEach(function (node) {
@@ -52,11 +52,11 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                             node.name === 'Nikola Jokic' || node.name === 'Kawhi Leonard') {
                             node.itemStyle = {
                                 normal: {
-                                    color: '#00a5ff'
-                                }
-                            }
+                                    color: '#00a5ff',
+                                },
+                            };
                         } else {
-                            node.itemStyle = null
+                            node.itemStyle = null;
                         }
 
                         node.draggable = true;
@@ -74,7 +74,7 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                             text: 'NBA Vizualization',
                             subtext: 'Default layout',
                             top: 'bottom',
-                            left: 'right'
+                            left: 'right',
                         },
                         tooltip: {
                             // formatter: params => {
@@ -94,12 +94,12 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                             //             perfomance = data[1];
                             //             res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
                             //             '<span>' + params.marker + ' PER : ' + perfomance + '</span><br>' +
-                            //             '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';                          
+                            //             '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
                             //         } else {
                             //             perfomance = data[3];
                             //             res = '<p style="margin-bottom: 5px">' + name + '</p>' +
                             //             '<span>' + params.marker + ' Win : ' + perfomance + '</span><br>' +
-                            //             '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>'; 
+                            //             '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
                             //         }
 
                             //         return res
@@ -129,19 +129,19 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                         borderColor: '#fff',
                                         borderWidth: 1,
                                         shadowBlur: 10,
-                                        shadowColor: 'rgba(0, 0, 0, 0.3)'
-                                    }
+                                        shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                    },
                                 },
                                 lineStyle: {
-                                    curveness: 0.3
+                                    curveness: 0.3,
                                 },
                                 force: {
-                                    repulsion: 25
-                                }
-                            }
-                        ]
+                                    repulsion: 25,
+                                },
+                            },
+                        ],
                     };
-                })
+                }),
             );
         });
     }
