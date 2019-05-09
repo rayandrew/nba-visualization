@@ -211,7 +211,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
         ],
         yAxis: [
           {
-            name: 'Salary',
+            name: 'Salary (in USD)',
             type: 'value',
             min: 0,
             max: 35000000,

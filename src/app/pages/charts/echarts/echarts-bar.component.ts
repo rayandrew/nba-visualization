@@ -64,7 +64,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
           },
         },
         legend: {
-          data: ['Win', 'Salary'],
+          data: ['Win', 'Salary (in USD)'],
           backgroundColor: '#2d3035',
           top: 20,
           textStyle: {
@@ -192,7 +192,7 @@ export class EchartsBarComponent implements AfterViewInit, OnDestroy {
             },
           },
           {
-            name: 'Salary',
+            name: 'Salary (in USD)',
             type: 'bar',
             stack: 'team',
             z: 1,
