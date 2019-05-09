@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SmartTableService } from './smart-table.service';
+// import { SmartTableService } from './smart-table.service';
 import { TeamService } from './team.service';
 import { PlayerService } from './player.service';
 
