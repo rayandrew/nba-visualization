@@ -151,7 +151,7 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
           type: 'scatter',
         });
       }
-      
+
       this.options = {
         backgroundColor: echarts.bg,
         color: '#11419b',

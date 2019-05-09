@@ -6,7 +6,6 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { EChartOption } from 'echarts';
 import { parse } from 'echarts/extension/dataTool/gexf';
-import { color } from 'd3-color';
 
 @Component({
     selector: 'ngx-echarts-graph',
@@ -34,15 +33,15 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                     categories[0] = {
                         name: 'Player',
                         itemStyle: {
-                            color: '#000da3'
-                        }
-                    }
+                            color: '#000da3',
+                        },
+                    };
                     categories[1] = {
                         name: 'Team',
                         itemStyle: {
-                            color: '#d80000'
-                        }
-                    }
+                            color: '#d80000',
+                        },
+                    };
                     graph.nodes.forEach(function (node) {
                         if (node.attributes[1] != null) {
                             node.symbolSize = node.attributes[2] / 1000000;
@@ -52,7 +51,7 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                             node.symbolSize = node.attributes[2] / 15000000;
                         }
                         node.name = node.attributes[0];
-        
+
                         if (node.name === 'James Harden' || node.name === 'Lebron James' ||
                         node.name === 'Stephen Curry' || node.name === 'Giannis Antetokounmpo' ||
                         node.name === 'Anthony Davis' || node.name === 'Russell Westbrook' ||
@@ -61,9 +60,9 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                             node.category = 0;
                             node.itemStyle = {
                                 normal: {
-                                    color: '#00b6ff'
-                                }
-                            }
+                                    color: '#00b6ff',
+                                },
+                            };
                         } else if (node.name === 'ATL' || node.name === 'BRK' || node.name === 'BOS' ||
                         node.name === 'CHO' || node.name === 'CHI' || node.name === 'CLE' ||
                         node.name === 'DAL' || node.name === 'DEN' || node.name === 'DET' ||
@@ -78,10 +77,10 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                         } else if (node.name === 'NBA') {
                             node.itemStyle = {
                                 normal: {
-                                    color: '#a50000'
-                                }
-                            }
-                            node.focusNodeAdjacency = true
+                                    color: '#a50000',
+                                },
+                            };
+                            node.focusNodeAdjacency = true;
                         } else {
                             node.category = 0;
                         }
@@ -95,52 +94,49 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                         // };
                         // node.category = node.attributes[4];
                     });
-                    console.log(graph)
                     return {
                         tooltip: {
                             formatter: params => {
                                 if (params.dataType === 'node') {
-                                    let data = params.data.attributes
-                                    let salary = data[2];
-                                    let name = params.name;
+                                    const data = params.data.attributes;
+                                    const salary = data[2];
+                                    const name = params.name;
                                     let perfomance;
                                     let res;
-        
-                                    let currency = new Intl.NumberFormat('en-US', {
+
+                                    const currency = new Intl.NumberFormat('en-US', {
                                         style: 'currency',
                                         currency: 'USD',
                                     });
-        
+
                                     if (data[1] != null) {
                                         perfomance = data[1];
                                         res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
                                         '<span>' + params.marker + ' PER : ' + perfomance + '</span><br>' +
-                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';                          
+                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
                                     } else if (data[3] != null) {
                                         perfomance = data[3];
                                         res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
                                         '<span>' + params.marker + ' Win : ' + perfomance + '</span><br>' +
-                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';                                
+                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
                                     } else {
-                                        res ="<div class='row' style='margin: 5px'>" +
-                                        "<div class='column'><img src='assets/images/nba-two.png' alt='Image not found' height='72' width='42'></div>" +
-                                        "<div class='column' style='margin: 5px'>" + '<span style="margin-bottom: 5px">' + name + '</span><br>' +
-                                        '<span>' + params.marker + ' Total spent money : ' + currency.format(salary) + '</span></div></div>'; 
+                                        res = '<div class=\'row\' style=\'margin: 5px\'>' +
+                                        '<div class=\'column\'><img src=\'assets/images/nba-two.png\' alt=\'Image not found\' height=\'72\' width=\'42\'></div>' +
+                                        '<div class=\'column\' style=\'margin: 5px\'>' + '<span style="margin-bottom: 5px">' + name + '</span><br>' +
+                                        '<span>' + params.marker + ' Total spent money : ' + currency.format(salary) + '</span></div></div>';
                                     }
-        
-                                    return res
+
+                                    return res;
                                 }
-                            }
+                            },
                         },
                         legend: [{
-                            // selectedMode: 'single',
                             data: categories.map(function (a) {
-                                // console.log(a)
                                 return a.name;
                             }),
                             textStyle: {
-                                color: '#ffffff'
-                            }
+                                color: '#ffffff',
+                            },
                         }],
                         animationDuration: 1500,
                         animationEasingUpdate: 'quinticInOut',
@@ -164,7 +160,7 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                 label: {
                                     position: 'right',
                                     formatter: '{b}',
-                                    color: '#ffffff'
+                                    color: '#ffffff',
                                 },
                                 lineStyle: {
                                     curveness: 0.3,
