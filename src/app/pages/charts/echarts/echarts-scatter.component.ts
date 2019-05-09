@@ -31,7 +31,6 @@ export class EchartsScatterComponent implements AfterViewInit, OnDestroy {
         type: 'scatter',
       }];
 
-      console.log(this.team);
       if (this.team === 'DEN') {
         seriesData.push({
           symbolSize: 20,
