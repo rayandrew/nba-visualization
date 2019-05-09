@@ -10,37 +10,12 @@ import {
   LayoutService,
   StateService,
 } from './utils';
-import { UserData } from './data/users';
+
 import { SmartTableData } from './data/smart-table';
-import { UserActivityData } from './data/user-activity';
-import { OrdersChartData } from './data/orders-chart';
-import { ProfitChartData } from './data/profit-chart';
-import { TrafficListData } from './data/traffic-list';
-import { EarningData } from './data/earning';
-import { OrdersProfitChartData } from './data/orders-profit-chart';
-import { TrafficBarData } from './data/traffic-bar';
-import { ProfitBarAnimationChartData } from './data/profit-bar-animation-chart';
-import { StatsBarData } from './data/stats-bar';
-import { CountryOrderData } from './data/country-order';
-import { StatsProgressBarData } from './data/stats-progress-bar';
-import { VisitorsAnalyticsData } from './data/visitors-analytics';
 import { TeamData } from './data/team';
 import { PlayerData } from './data/player';
 
-import { UserService } from './mock/users.service';
 import { SmartTableService } from './mock/smart-table.service';
-import { UserActivityService } from './mock/user-activity.service';
-import { OrdersChartService } from './mock/orders-chart.service';
-import { ProfitChartService } from './mock/profit-chart.service';
-import { TrafficListService } from './mock/traffic-list.service';
-import { EarningService } from './mock/earning.service';
-import { OrdersProfitChartService } from './mock/orders-profit-chart.service';
-import { TrafficBarService } from './mock/traffic-bar.service';
-import { ProfitBarAnimationChartService } from './mock/profit-bar-animation-chart.service';
-import { StatsBarService } from './mock/stats-bar.service';
-import { CountryOrderService } from './mock/country-order.service';
-import { StatsProgressBarService } from './mock/stats-progress-bar.service';
-import { VisitorsAnalyticsService } from './mock/visitors-analytics.service';
 import { MockDataModule } from './mock/mock-data.module';
 import { TeamService } from './mock/team.service';
 import { PlayerService } from './mock/player.service';
@@ -64,20 +39,7 @@ const socialLinks = [
 ];
 
 const DATA_SERVICES = [
-  { provide: UserData, useClass: UserService },
   { provide: SmartTableData, useClass: SmartTableService },
-  { provide: UserActivityData, useClass: UserActivityService },
-  { provide: OrdersChartData, useClass: OrdersChartService },
-  { provide: ProfitChartData, useClass: ProfitChartService },
-  { provide: TrafficListData, useClass: TrafficListService },
-  { provide: EarningData, useClass: EarningService },
-  { provide: OrdersProfitChartData, useClass: OrdersProfitChartService },
-  { provide: TrafficBarData, useClass: TrafficBarService },
-  { provide: ProfitBarAnimationChartData, useClass: ProfitBarAnimationChartService },
-  { provide: StatsBarData, useClass: StatsBarService },
-  { provide: CountryOrderData, useClass: CountryOrderService },
-  { provide: StatsProgressBarData, useClass: StatsProgressBarService },
-  { provide: VisitorsAnalyticsData, useClass: VisitorsAnalyticsService },
   { provide: TeamData, useClass: TeamService },
   { provide: PlayerData, useClass: PlayerService },
 ];

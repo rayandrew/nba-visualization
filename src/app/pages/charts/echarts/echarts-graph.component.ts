@@ -10,7 +10,7 @@ import { parse } from 'echarts/extension/dataTool/gexf';
 @Component({
     selector: 'ngx-echarts-graph',
     template: `
-    <div echarts [options]="options | async" class="echart"></div>
+    <div echarts [options]="options | async" class="echart" style="height: 1700px"></div>
   `,
 })
 export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
@@ -52,11 +52,11 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                         }
                         node.name = node.attributes[0];
 
-                        if (node.name === 'James Harden' || node.name === 'Lebron James' ||
-                        node.name === 'Stephen Curry' || node.name === 'Giannis Antetokounmpo' ||
-                        node.name === 'Anthony Davis' || node.name === 'Russell Westbrook' ||
-                        node.name === 'Kevin Durant' || node.name === 'Kyrie Irving' ||
-                        node.name === 'Nikola Jokic' || node.name === 'Kawhi Leonard') {
+                        if (node.name === 'James Harden' || node.name === 'LeBron James' ||
+                            node.name === 'Stephen Curry' || node.name === 'Giannis Antetokounmpo' ||
+                            node.name === 'Anthony Davis' || node.name === 'Russell Westbrook' ||
+                            node.name === 'Kevin Durant' || node.name === 'Kyrie Irving' ||
+                            node.name === 'Nikola Jokic' || node.name === 'Kawhi Leonard') {
                             node.category = 0;
                             node.itemStyle = {
                                 normal: {
@@ -64,16 +64,17 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                 },
                             };
                         } else if (node.name === 'ATL' || node.name === 'BRK' || node.name === 'BOS' ||
-                        node.name === 'CHO' || node.name === 'CHI' || node.name === 'CLE' ||
-                        node.name === 'DAL' || node.name === 'DEN' || node.name === 'DET' ||
-                        node.name === 'GSW' || node.name === 'LAL' || node.name === 'MEM' ||
-                        node.name === 'MIA' || node.name === 'MIL' || node.name === 'MIN' ||
-                        node.name === 'NOP' || node.name === 'NYK' || node.name === 'OKC' ||
-                        node.name === 'ORL' || node.name === 'PHI' || node.name === 'PHO' ||
-                        node.name === 'POR' || node.name === 'SAS' || node.name === 'SAC' ||
-                        node.name === 'TOR' || node.name === 'UTA' || node.name === 'WAS' ||
-                        node.name === 'HOU' || node.name === 'IND' || node.name === 'LAC') {
+                            node.name === 'CHO' || node.name === 'CHI' || node.name === 'CLE' ||
+                            node.name === 'DAL' || node.name === 'DEN' || node.name === 'DET' ||
+                            node.name === 'GSW' || node.name === 'LAL' || node.name === 'MEM' ||
+                            node.name === 'MIA' || node.name === 'MIL' || node.name === 'MIN' ||
+                            node.name === 'NOP' || node.name === 'NYK' || node.name === 'OKC' ||
+                            node.name === 'ORL' || node.name === 'PHI' || node.name === 'PHO' ||
+                            node.name === 'POR' || node.name === 'SAS' || node.name === 'SAC' ||
+                            node.name === 'TOR' || node.name === 'UTA' || node.name === 'WAS' ||
+                            node.name === 'HOU' || node.name === 'IND' || node.name === 'LAC') {
                             node.category = 1;
+                            node.symbol = `image://assets/images/teams/${node.name}.png`;
                         } else if (node.name === 'NBA') {
                             node.itemStyle = {
                                 normal: {
@@ -81,6 +82,7 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                 },
                             };
                             node.focusNodeAdjacency = true;
+                            node.symbol = `image://assets/images/nba-three.png`;
                         } else {
                             node.category = 0;
                         }
@@ -112,18 +114,18 @@ export class EchartsGraphComponent implements AfterViewInit, OnDestroy {
                                     if (data[1] != null) {
                                         perfomance = data[1];
                                         res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
-                                        '<span>' + params.marker + ' PER : ' + perfomance + '</span><br>' +
-                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
+                                            '<span>' + params.marker + ' PER : ' + perfomance + '</span><br>' +
+                                            '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
                                     } else if (data[3] != null) {
                                         perfomance = data[3];
                                         res = '<span style="margin-bottom: 5px">' + name + '</span><br>' +
-                                        '<span>' + params.marker + ' Win : ' + perfomance + '</span><br>' +
-                                        '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
+                                            '<span>' + params.marker + ' Win : ' + perfomance + '</span><br>' +
+                                            '<span>' + params.marker + ' Salary : ' + currency.format(salary) + '</span>';
                                     } else {
                                         res = '<div class=\'row\' style=\'margin: 5px\'>' +
-                                        '<div class=\'column\'><img src=\'assets/images/nba-two.png\' alt=\'Image not found\' height=\'72\' width=\'42\'></div>' +
-                                        '<div class=\'column\' style=\'margin: 5px\'>' + '<span style="margin-bottom: 5px">' + name + '</span><br>' +
-                                        '<span>' + params.marker + ' Total spent money : ' + currency.format(salary) + '</span></div></div>';
+                                            '<div class=\'column\'><img src=\'assets/images/nba-two.png\' alt=\'Image not found\' height=\'72\' width=\'42\'></div>' +
+                                            '<div class=\'column\' style=\'margin: 5px\'>' + '<span style="margin-bottom: 5px">' + name + '</span><br>' +
+                                            '<span>' + params.marker + ' Total spent money : ' + currency.format(salary) + '</span></div></div>';
                                     }
 
                                     return res;

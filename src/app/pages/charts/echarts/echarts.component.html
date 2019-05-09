@@ -1,6 +1,13 @@
 <div class="row">
-  <ngx-echarts-graph></ngx-echarts-graph>
   <ng-container *ngIf="teamDetails | async as teams">
+    <div class="col-12">
+      <nb-card class="bar">
+        <nb-card-header class="bar-header">Team Graph</nb-card-header>
+        <nb-card-body>
+          <ngx-echarts-graph></ngx-echarts-graph>
+        </nb-card-body>
+      </nb-card>
+    </div>
     <div class="col-12">
       <nb-card class="bar">
         <nb-card-header class="bar-header">Team Performance</nb-card-header>
